@@ -55,6 +55,7 @@ Cloud Sync는 다음과 같은 스토리지 유형을 지원합니다.
 * Cloud Volumes Service
 * Cloud Volumes ONTAP
 * Google 클라우드 스토리지
+* Google 드라이브
 * IBM 클라우드 오브젝트 스토리지
 * 사내 ONTAP 클러스터
 * ONTAP S3 스토리지

@@ -18,6 +18,55 @@ Cloud Sync의 새로운 기능에 대해 알아보십시오.
 
 
 
+== 2022년 7월 31일
+
+
+
+=== Google 드라이브
+
+이제 NFS 서버 또는 SMB 서버의 데이터를 Google Drive로 동기화할 수 있습니다. "내 드라이브"와 "공유 드라이브"가 모두 대상으로 지원됩니다.
+
+Google Drive를 포함하는 동기화 관계를 생성하려면 필요한 권한과 개인 키가 있는 서비스 계정을 설정해야 합니다. https://docs.netapp.com/us-en/cloud-manager-sync/reference-requirements.html#google-drive["Google Drive 요구 사항에 대해 자세히 알아보십시오"].
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계 목록을 봅니다"].
+
+
+
+=== Azure Data Lake 추가 지원
+
+Cloud Sync는 이제 Azure Data Lake Storage Gen2에 대한 추가 동기화 관계를 지원합니다.
+
+* Amazon S3에서 Azure Data Lake Storage Gen2로
+* IBM Cloud Object Storage를 Azure Data Lake Storage Gen2로 마이그레이션
+* StorageGRID에서 Azure Data Lake Storage Gen2로
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계 목록을 봅니다"].
+
+
+
+=== 동기화 관계를 설정하는 새로운 방법
+
+Cloud Manager의 Canvas에서 직접 동기화 관계를 설정하는 추가 방법이 추가되었습니다.
+
+
+
+==== 끌어서 놓기
+
+이제 한 작업 환경을 다른 작업 환경 위로 끌어다 놓아 Canvas에서 동기화 관계를 설정할 수 있습니다.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["Cloud Manager의 알림 센터를 보여 주는 스크린샷"]
+
+
+
+==== 오른쪽 패널 설정
+
+이제 Canvas에서 작업 환경을 선택한 다음 오른쪽 패널에서 동기화 옵션을 선택하여 Azure Blob 저장소 또는 Google Cloud Storage에 대한 동기화 관계를 설정할 수 있습니다.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["Cloud Manager의 알림 센터를 보여 주는 스크린샷"]
+
+
+
 == 2022년 7월 3일
 
 
@@ -28,7 +77,7 @@ Cloud Sync의 새로운 기능에 대해 알아보십시오.
 
 Azure Data Lake를 포함하는 동기화 관계를 생성할 때 Cloud Sync에 스토리지 계정 연결 문자열을 제공해야 합니다. SAS(공유 액세스 서명)가 아니라 일반 연결 문자열이어야 합니다.
 
-link:reference-supported-relationships.html["지원되는 동기화 관계 목록을 봅니다"].
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계 목록을 봅니다"].
 
 
 
@@ -53,7 +102,7 @@ link:reference-supported-relationships.html["지원되는 동기화 관계 목�
 - pubsub.topics.setIamPolicy
 - storage.buckets.update
 ----
-link:task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
 
 
 
@@ -95,7 +144,7 @@ Google Cloud의 데이터 브로커에 대한 기본 시스템 유형은 이제 
 ----
 이러한 사용 권한은 사용자가 만든 새 데이터 브로커에 자동으로 추가됩니다.
 
-link:task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
 
 
 
