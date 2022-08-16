@@ -65,7 +65,13 @@ Cloud Sync가 Google Cloud에 데이터 브로커를 배포할 때 필요한 아
 - resourcemanager.projects.get
 - storage.buckets.get
 - storage.buckets.list
-- storage.objects.*
+- storage.objects.create
+- storage.objects.delete
+- storage.objects.get
+- storage.objects.getIamPolicy
+- storage.objects.list
+- storage.objects.setIamPolicy
+- storage.objects.update
 - iam.serviceAccounts.signJwt
 - pubsub.subscriptions.consume
 - pubsub.subscriptions.create
