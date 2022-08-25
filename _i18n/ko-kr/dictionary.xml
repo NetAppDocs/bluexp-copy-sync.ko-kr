@@ -1556,4 +1556,5 @@
   <block id="79074218529972fce8a6ccab7f00095d" category="paragraph">이제 Canvas에서 작업 환경을 선택한 다음 오른쪽 패널에서 동기화 옵션을 선택하여 Azure Blob 저장소 또는 Google Cloud Storage에 대한 동기화 관계를 설정할 수 있습니다.</block>
   <block id="b0b9021c705a42adb2b41c27fd7502f5" category="paragraph"><block ref="b0b9021c705a42adb2b41c27fd7502f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9fffb7017709a369d0e0ce563839fee2" category="paragraph"><block ref="74635618081bc819b4c328f5ee049800" category="inline-link-rx"></block>.</block>
+  <block id="20ef58d225f15c6c7617c04b34bd0ff8" category="list-text">데이터 브로커 그룹 * 페이지에서 * 데이터 브로커 * 만들기 를 클릭한 다음 * Google Cloud Platform * 을 선택합니다.</block>
 </blocks>

@@ -102,7 +102,7 @@ Cloud Sync가 Google Cloud에 데이터 브로커를 배포할 때 필요한 아
 +
 데이터 브로커 그룹 * 페이지가 나타날 때까지 단계를 완료합니다.
 
-. 데이터 브로커 그룹 * 페이지에서 * 데이터 브로커 * 만들기 를 클릭한 다음 * Microsoft Azure * 를 선택합니다.
+. 데이터 브로커 그룹 * 페이지에서 * 데이터 브로커 * 만들기 를 클릭한 다음 * Google Cloud Platform * 을 선택합니다.
 +
 image:screenshot-google.png["AWS, Azure, Google Cloud 및 온프레미스 데이터 브로커 중에서 선택할 수 있는 Data Broker 페이지의 스크린샷"]
 
