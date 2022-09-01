@@ -30,7 +30,7 @@ CentOS 스트림은 지원되지 않습니다.
 ** Ubuntu 서버 20.04 LTS
 ** SUSE Linux Enterprise Server 15 SP1
 +
-데이터 브로커를 설치하기 전에 호스트에서 'yum update all' 명령을 실행해야 합니다.
+데이터 브로커를 설치하기 전에 호스트에서 'yum update' 명령을 실행해야 합니다.
 
 +
 Red Hat Enterprise Linux 시스템은 Red Hat 서브스크립션 관리 에 등록되어 있어야 합니다. 등록되지 않은 경우, 시스템은 설치 중에 필요한 타사 소프트웨어를 업데이트하기 위해 리포지토리에 액세스할 수 없습니다.
