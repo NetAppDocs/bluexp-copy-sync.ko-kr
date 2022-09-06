@@ -663,7 +663,6 @@
   <block id="f3796c63e27caa7881ad0844ee9e9544" category="list-text">20GB HDD PD 표준</block>
   <block id="b7313c752ca12081edfba2212c0cc2e4" category="summary">데이터를 즉시 동기화하고 일정을 변경하는 등 동기화 관계를 언제든지 관리할 수 있습니다.</block>
   <block id="d45779d5d4d94ce3569ba04a2f510bdc" category="doc">동기화 관계 관리</block>
-  <block id="aa015c7ce7c37e507df5b27ca80bb605" category="section-title">즉각적인 데이터 동기화 수행</block>
   <block id="01db9e7829acc4899b2e0742925feea9" category="paragraph">예약된 다음 동기화를 기다리지 않고 버튼을 눌러 소스와 타겟 간에 데이터를 즉시 동기화할 수 있습니다.</block>
   <block id="0f5f1ed19e5f92c9f1aad34019c5c065" category="inline-image-macro">동기화 관계에 대한 작업을 수행할 수 있는 단추 스크린샷</block>
   <block id="781a4e1aefac4f9409210de2df0f2992" category="list-text">Dashboard * 에서 동기화 관계로 이동하고 를 클릭합니다 <block ref="1452da4272733702009675a0aac63ae1" category="inline-image-macro-rx" type="image"></block></block>
@@ -742,7 +741,6 @@
   <block id="650fcf6688b77acd2c46fd3270ff8134" category="cell">지원되는 타겟 위치</block>
   <block id="e83e5674ab295a6613b60f5e12d1bfe3" category="list-text">NFS 서버</block>
   <block id="876d9b7b1c11a792f25a0e1e9dbf31dd" category="list-text">SMB 서버</block>
-  <block id="f83bcb8e69c5f1d1eb29cddacb8374b0" category="list-text">SMB 서버</block>
   <block id="c17ce6a7cdcb97581c6d5603ec7d447a" category="cell">온프레미스 ONTAP 클러스터</block>
   <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="cell">S3</block>
   <block id="2a01d572b1447155c310cabafac3fae9" category="paragraph">참고:</block>
@@ -1512,7 +1510,6 @@
   <block id="66c941bf286fd505b009d484ca94a594" category="section-title">새로운 Google Cloud 컴퓨터 유형입니다</block>
   <block id="32ddf7d830e3a5092074c4f9bb211736" category="paragraph">Google Cloud의 데이터 브로커에 대한 기본 시스템 유형은 이제 n2-standard-4입니다.</block>
   <block id="80b8bec2e4ce95cb7a2f98a49ff8964c" category="list-text">초기 데이터 동기화 후 Cloud Sync는 소스 S3 버킷 또는 Google 클라우드 스토리지 버킷의 변경 사항을 수신 대기하고 변경 사항이 발생할 때마다 타겟에 계속 동기화합니다. 예약된 간격으로 소스를 다시 검색할 필요가 없습니다.</block>
-  <block id="f3705b49b8b44367d9a208662d64b1e0" category="paragraph">이 설정은 동기화 관계를 생성하고 S3 버킷 또는 Google 클라우드 스토리지에서 S3, Google 클라우드 스토리지, Azure Blob 스토리지, StorageGRID 또는 IBM 스토리지로 동기화할 때만 사용할 수 있습니다.</block>
   <block id="ae067a0352a2b892590442ce8932ed20" category="list-text">S3이 소스인 경우 크기별로 필터링은 삭제 이벤트가 아닌 복사 이벤트에서만 활성화됩니다.</block>
   <block id="218f5307b8ee8bb2d446b8572cd40e9f" category="list-text">Azure Data Lake Storage Gen2</block>
   <block id="e83655905b13c4a3bc8d7de2a55ecea8" category="inline-link-macro">연속 동기화 옵션에 대해 자세히 알아보십시오</block>
@@ -1557,4 +1554,32 @@
   <block id="9fffb7017709a369d0e0ce563839fee2" category="paragraph"><block ref="74635618081bc819b4c328f5ee049800" category="inline-link-rx"></block>.</block>
   <block id="20ef58d225f15c6c7617c04b34bd0ff8" category="list-text">데이터 브로커 그룹 * 페이지에서 * 데이터 브로커 * 만들기 를 클릭한 다음 * Google Cloud Platform * 을 선택합니다.</block>
   <block id="a855786065eb842829e76727ee601d59" category="paragraph">데이터 브로커를 설치하기 전에 호스트에서 'yum update' 명령을 실행해야 합니다.</block>
+  <block id="da8b75d7f83536bef455f4cfcb81982f" category="section-title">2022년 9월 4일</block>
+  <block id="a9b4886a93e658bc8692b215ae9412a0" category="section-title">추가 Google 드라이브 지원</block>
+  <block id="38e24a385d32651afeede647ae09290f" category="list-text">Cloud Sync는 이제 Google 드라이브에 대한 추가 동기화 관계를 지원합니다.</block>
+  <block id="989bccb142d89b75c8392bf5f5e1604c" category="list-text">Google Drive를 NFS 서버로 이동합니다</block>
+  <block id="44191e60b1503eaf657847a1915cafeb" category="list-text">Google Drive를 SMB 서버로</block>
+  <block id="1483ec65b58ea8f21aa486ac67f98497" category="list-text">Google Drive를 포함하는 동기화 관계에 대한 보고서를 생성할 수도 있습니다.</block>
+  <block id="6a8d3c04a6ef359c72722da014b3e2a0" category="section-title">지속적인 동기화 향상</block>
+  <block id="700604b36a9bc9c763c84403ff4fc2a1" category="paragraph">이제 다음 유형의 동기화 관계에서 연속 동기화 설정을 활성화할 수 있습니다.</block>
+  <block id="16a4f69cf5e478434d66f741eb65609e" category="list-text">S3 버킷을 NFS 서버로</block>
+  <block id="f1b9deb2828fa22b8254f1a8a51f5789" category="list-text">Google Cloud Storage를 NFS 서버로 전송합니다</block>
+  <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">이메일 알림</block>
+  <block id="2a6aa0e8585b387718e871db90f1a32e" category="paragraph">이제 Cloud Sync 알림을 이메일로 받을 수 있습니다.</block>
+  <block id="20ef839c6c5f361341c0392939dbf3b2" category="paragraph">이메일로 알림을 수신하려면 동기화 관계에서 * 알림 * 설정을 활성화한 다음 Cloud Manager에서 알림 및 알림 설정을 구성해야 합니다.</block>
+  <block id="e6694f6134fb0186a17db662ced006d0" category="inline-link">알림을 설정하는 방법에 대해 알아봅니다</block>
+  <block id="f7ae9f1fb8f4b7044457ebf35058b088" category="paragraph"><block ref="8365080032c57ac637a7cb1d0af196ae" category="inline-link-rx"></block>.</block>
+  <block id="ead765630c1fd7e384e47d9fc387cf84" category="paragraph">이 설정은 동기화 관계를 생성하고 S3 버킷 또는 Google Cloud Storage의 데이터를 Azure Blob 스토리지, CIFS, Google Cloud Storage, IBM Cloud Object Storage, NFS, S3 및 StorageGRID의 대상으로 동기화할 때만 사용할 수 있습니다.</block>
+  <block id="3751024f8814dd0f9cc7022c63dd219d" category="section-title">즉각적인 데이터 동기화를 수행합니다</block>
+  <block id="0120982bf6587a582d7ad3aa6f491005" category="section-title">알림 설정</block>
+  <block id="7cd2df821c4b3fee85371ef61119f0e3" category="paragraph">각 동기화 관계에 대한 * 알림 * 설정을 사용하면 Cloud Manager의 알림 센터에서 Cloud Sync 알림을 수신할지 여부를 선택할 수 있습니다. 성공적인 데이터 동기화, 실패한 데이터 동기화 및 취소된 데이터 동기화를 위한 알림을 활성화할 수 있습니다.</block>
+  <block id="55d9f99a73d4f287de3573ba4a2c149b" category="paragraph">또한 이메일로 알림을 받을 수도 있습니다.</block>
+  <block id="50685346648f799f564787da3aeaa3df" category="list-text">동기화 관계에 대한 설정을 수정합니다.</block>
+  <block id="e265f7dc29349c5c09e52af073ae2fdf" category="list-text">알림 * 을 활성화합니다.</block>
+  <block id="f9d4f53357700da18c4c21765dd9a257" category="list-text">이메일로 알림을 받으려면 알림 및 알림 설정을 구성합니다.</block>
+  <block id="2c97c497a9405e946d3eb1dd6266fe96" category="list-text">설정 &gt; 경고 및 알림 설정 * 을 클릭합니다.</block>
+  <block id="0f3cd015c1ca0bfb4d2fbb852b3d6a5e" category="list-text">사용자 또는 여러 사용자를 선택하고 * 정보 * 알림 유형을 선택합니다.</block>
+  <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">적용 * 을 클릭합니다.</block>
+  <block id="8096099be8d06d4be1f099db06d90dd5" category="paragraph">이제 클라우드 관리자의 알림 센터에서 Cloud Sync 알림을 받게 되며, 이 옵션을 구성한 경우 이메일로 몇 가지 알림이 전송됩니다.</block>
+  <block id="7ca5aa2b579039b92d9aed9f84201f04" category="paragraph">에 대한 알림을 수신하려는 경우</block>
 </blocks>

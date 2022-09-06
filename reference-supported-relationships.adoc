@@ -181,6 +181,13 @@ Cloud Sync를 사용하면 소스에서 타겟으로 데이터를 동기화할 �
 
 
 
+| Google 드라이브  a| 
+* NFS 서버
+* SMB 서버
+
+
+
+
 | IBM 클라우드 오브젝트 스토리지  a| 
 * Amazon EFS
 * ONTAP용 Amazon FSx
