@@ -98,8 +98,6 @@
   <block id="1fdbc560a67348af4e76fd59fe5ba957" category="paragraph">Cloud Sync에서는 문제를 해결하는 데 도움이 되는 각 데이터 브로커의 상태를 표시합니다.</block>
   <block id="417555a2380aa45dc52608834062b293" category="list-text">"알 수 없음" 또는 "실패" 상태의 데이터 브로커를 식별합니다.</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-image-macro"></block>
-  <block id="fb735d46258c860500df045bd72f563f" category="paragraph"><block ref="fb735d46258c860500df045bd72f563f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7bab02d802b38084f68f9bb810f1ca53" category="list-text">에 마우스를 올려 놓습니다 <block ref="a74720392297d66ac1ab9a90296912c9" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하여 실패 원인을 확인합니다.</block>
   <block id="cb1293ddc33121613d8b44ddf7bddebc" category="list-text">문제를 해결하십시오.</block>
   <block id="4c23f2743e95cade04a6991678e7c813" category="paragraph">예를 들어, 데이터 브로커가 오프라인인 경우 다시 시작하기만 하면 되고, 초기 구축에 실패한 경우 데이터 브로커를 제거해야 할 수 있습니다.</block>
   <block id="b913043c4767c72e8bbb3ed88c33dd15" category="paragraph">동기화 프로세스 중에 동기화 관계에 오류가 발생하면 데이터 브로커 그룹의 동시성을 통합하면 동기화 오류 수를 줄일 수 있습니다. 그룹 구성을 변경하면 전송 속도가 느려져 성능에 영향을 줄 수 있습니다.</block>
@@ -1582,4 +1580,8 @@
   <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">적용 * 을 클릭합니다.</block>
   <block id="8096099be8d06d4be1f099db06d90dd5" category="paragraph">이제 클라우드 관리자의 알림 센터에서 Cloud Sync 알림을 받게 되며, 이 옵션을 구성한 경우 이메일로 몇 가지 알림이 전송됩니다.</block>
   <block id="7ca5aa2b579039b92d9aed9f84201f04" category="paragraph">에 대한 알림을 수신하려는 경우</block>
+  <block id="e48d5ea54c85373b23a289d375bf989d" category="inline-image-macro">데이터 브로커의 상태가 "알 수 없음"인 Cloud Sync 상태 화면의 스크린샷</block>
+  <block id="63bb41e88e2d3501b4c30c3d982ddada" category="paragraph"><block ref="63bb41e88e2d3501b4c30c3d982ddada" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0d57e234a2b4332ebe0b7d721befcace" category="inline-image-macro">"정보" 아이콘</block>
+  <block id="69f36491bce31dc81bbaeca0cbd9e9a7" category="list-text">에 마우스를 올려 놓습니다 <block ref="a83fa8ab64292d507b50e25c113057be" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하여 실패 원인을 확인합니다.</block>
 </blocks>
