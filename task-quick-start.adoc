@@ -28,7 +28,7 @@ Cloud Sync 서비스를 시작하는 데 몇 가지 단계가 포함되어 있�
 
 
 [role="quick-margin-para"]
-Cloud Volumes ONTAP 및 온프레미스 ONTAP 클러스터에는 커넥터가 필요합니다.
+Cloud Volumes ONTAP, 온프레미스 ONTAP 클러스터 및 ONTAP용 Amazon FSx에는 커넥터가 필요합니다.
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html["Cloud Manager를 시작하는 방법을 알아보십시오"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터에 대해 자세히 알아보십시오"^]

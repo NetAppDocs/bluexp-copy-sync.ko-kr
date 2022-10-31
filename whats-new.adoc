@@ -18,6 +18,36 @@ Cloud Sync의 새로운 기능에 대해 알아보십시오.
 
 
 
+== 2022년 10월 30일
+
+
+
+=== Microsoft Azure에서 지속적으로 동기화합니다
+
+이제 연속 동기화 설정이 소스 Azure 스토리지 버킷에서 Azure 데이터 브로커를 사용하는 클라우드 스토리지까지 지원됩니다.
+
+초기 데이터 동기화 후 Cloud Sync는 소스 Azure 스토리지 버킷의 변경 사항을 수신 대기하고 변경 사항이 발생할 때마다 타겟에 대한 변경 사항을 지속적으로 동기화합니다. 이 설정은 Azure 스토리지 버킷에서 Azure Blob 스토리지, CIFS, Google 클라우드 스토리지, IBM 클라우드 오브젝트 스토리지, NFS 및 StorageGRID로 동기화할 때 사용할 수 있습니다.
+
+이 설정을 사용하려면 Azure 데이터 브로커에 사용자 지정 역할과 다음 권한이 필요합니다.
+
+[source, json]
+----
+'Microsoft.Storage/storageAccounts/read',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/write',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/read',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/delete',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action',
+'Microsoft.EventGrid/systemTopics/read',
+'Microsoft.EventGrid/systemTopics/write',
+'Microsoft.EventGrid/systemTopics/delete',
+'Microsoft.EventGrid/eventSubscriptions/write',
+'Microsoft.Storage/storageAccounts/write'
+----
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
+
+
+
 == 2022년 9월 4일
 
 
