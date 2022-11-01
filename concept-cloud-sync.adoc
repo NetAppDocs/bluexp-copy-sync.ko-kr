@@ -27,7 +27,7 @@ video::oZNJtLvgNfQ[youtube,width=848,height=480]
 
 == Cloud Sync의 작동 방식
 
-Cloud Sync는 데이터 브로커 그룹, Cloud Manager를 통해 사용 가능한 클라우드 기반 인터페이스, 소스 및 타겟으로 구성된 서비스형 소프트웨어(SaaS) 플랫폼입니다.
+Cloud Sync는 데이터 브로커 그룹, BlueXP를 통해 사용 가능한 클라우드 기반 인터페이스, 소스 및 타겟으로 구성된 SaaS(Software-as-a-Service) 플랫폼입니다.
 
 다음 이미지는 Cloud Sync 구성 요소 간의 관계를 보여줍니다.
 

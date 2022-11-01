@@ -84,7 +84,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 이제 Cloud Sync 알림을 이메일로 받을 수 있습니다.
 
-이메일로 알림을 수신하려면 동기화 관계에서 * 알림 * 설정을 활성화한 다음 Cloud Manager에서 알림 및 알림 설정을 구성해야 합니다.
+이메일로 알림을 받으려면 동기화 관계에서 * 알림 * 설정을 활성화한 다음 BlueXP에서 알림 및 알림 설정을 구성해야 합니다.
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#setting-up-notifications["알림을 설정하는 방법에 대해 알아봅니다"].
 
@@ -119,7 +119,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationshi
 
 === 동기화 관계를 설정하는 새로운 방법
 
-Cloud Manager의 Canvas에서 직접 동기화 관계를 설정하는 추가 방법이 추가되었습니다.
+BlueXP의 Canvas에서 직접 동기화 관계를 설정하는 추가 방법이 추가되었습니다.
 
 
 
@@ -127,7 +127,7 @@ Cloud Manager의 Canvas에서 직접 동기화 관계를 설정하는 추가 방
 
 이제 한 작업 환경을 다른 작업 환경 위로 끌어다 놓아 Canvas에서 동기화 관계를 설정할 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["Cloud Manager의 알림 센터를 보여 주는 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["BlueXP의 알림 센터를 보여 주는 스크린샷."]
 
 
 
@@ -135,7 +135,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 
 이제 Canvas에서 작업 환경을 선택한 다음 오른쪽 패널에서 동기화 옵션을 선택하여 Azure Blob 저장소 또는 Google Cloud Storage에 대한 동기화 관계를 설정할 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["Cloud Manager의 알림 센터를 보여 주는 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["BlueXP의 알림 센터를 보여 주는 스크린샷."]
 
 
 
@@ -254,9 +254,9 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.htm
 
 === 알림
 
-이제 새 * 알림 * 설정을 동기화 관계에 사용할 수 있습니다. 이 설정을 사용하면 Cloud Manager의 알림 센터에서 Cloud Sync 알림을 수신할지 여부를 선택할 수 있습니다. 성공적인 데이터 동기화, 실패한 데이터 동기화 및 취소된 데이터 동기화를 위한 알림을 활성화할 수 있습니다.
+이제 새 * 알림 * 설정을 동기화 관계에 사용할 수 있습니다. 이 설정을 사용하면 BlueXP 알림 센터에서 Cloud Sync 알림을 수신할지 여부를 선택할 수 있습니다. 성공적인 데이터 동기화, 실패한 데이터 동기화 및 취소된 데이터 동기화를 위한 알림을 활성화할 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png["Cloud Manager의 알림 센터를 보여 주는 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png["BlueXP의 알림 센터를 보여 주는 스크린샷."]
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"].
 
@@ -621,9 +621,9 @@ link:task-managing-relationships.html#changing-the-settings-for-a-sync-relations
 
 === 독립 실행형 Cloud Sync 서비스가 폐기됩니다
 
-독립 실행형 Cloud Sync 서비스가 폐기되었습니다. 이제 동일한 모든 기능을 사용할 수 있는 Cloud Manager에서 Cloud Sync에 직접 액세스할 수 있습니다.
+독립 실행형 Cloud Sync 서비스가 폐기되었습니다. 이제 BlueXP에서 동일한 모든 기능과 기능을 사용할 수 있는 Cloud Sync에 직접 액세스할 수 있습니다.
 
-Cloud Manager에 로그인한 후 맨 위에 있는 동기화 탭으로 전환하고 이전과 마찬가지로 관계를 볼 수 있습니다.
+BlueXP에 로그인한 후 맨 위에 있는 동기화 탭으로 전환하고 이전과 마찬가지로 관계를 볼 수 있습니다.
 
 
 

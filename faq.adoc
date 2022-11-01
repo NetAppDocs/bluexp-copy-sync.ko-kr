@@ -86,7 +86,7 @@ NOTE: Cloud Sync 관계는 Cloud Volumes Service 및 Azure NetApp Files에서 �
 
 === Cloud Sync에 어떻게 액세스합니까?
 
-Cloud Sync는 Cloud Manager의 * 동기화 * 탭에서 사용할 수 있습니다.
+Cloud Sync는 * 동기화 * 탭의 BlueXP 웹 사이트에서 사용할 수 있습니다.
 
 
 

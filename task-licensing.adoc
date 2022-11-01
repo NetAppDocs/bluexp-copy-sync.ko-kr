@@ -85,13 +85,13 @@ video::video_cloud_sync_registering_azure.mp4[width=848,height=480]
 
 .단계
 . 라이센스를 mailto:ng-cloudsync-contact@netapp.com?subject=Cloud%20Sync%20Service%20-%20BYOL%20License%20Purchase%20Request[NetApp 문의]까지 구입하십시오.
-. Cloud Manager에서 * 동기화 > 라이선스 * 를 클릭합니다.
+. BlueXP에서 * 동기화 > 라이선스 * 를 클릭합니다.
 . 라이센스 추가 * 를 클릭하고 필요한 정보를 추가합니다.
 +
 .. 일련 번호를 입력합니다.
 .. 추가하는 라이센스와 연관된 NetApp Support 사이트 계정을 선택합니다.
 +
-*** 계정이 이미 Cloud Manager에 추가된 경우 드롭다운 목록에서 해당 계정을 선택합니다.
+*** 계정이 이미 BlueXP에 추가된 경우 드롭다운 목록에서 선택합니다.
 *** 계정이 아직 추가되지 않은 경우 * NSS 자격 증명 추가 * 를 클릭하고 사용자 이름 및 암호를 입력한 다음 * 등록 * 을 클릭하고 드롭다운 목록에서 선택합니다.
 
 
@@ -107,7 +107,7 @@ video::video_cloud_sync_registering_azure.mp4[width=848,height=480]
 NetApp에서 구매한 Cloud Sync 라이센스를 연장한 경우, 새 만료 날짜는 Cloud Sync에서 자동으로 업데이트되지 않습니다. 만료 날짜를 새로 고치려면 라이센스를 다시 추가해야 합니다.
 
 .단계
-. Cloud Manager에서 * 동기화 > 라이선스 * 를 클릭합니다.
+. BlueXP에서 * 동기화 > 라이선스 * 를 클릭합니다.
 . 라이센스 추가 * 를 클릭하고 필요한 정보를 추가합니다.
 +
 .. 일련 번호를 입력합니다.

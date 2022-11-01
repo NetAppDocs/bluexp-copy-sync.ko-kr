@@ -20,10 +20,10 @@ summary: 웹 UI를 통해 제공되는 Cloud Sync 기능은 RESTful API를 통�
 
 == 시작하기
 
-Cloud Sync API를 시작하려면 사용자 토큰과 Cloud Central 계정 ID를 얻어야 합니다. API 호출을 할 때 인증 헤더에 토큰과 계정 ID를 추가해야 합니다.
+Cloud Sync API를 시작하려면 사용자 토큰과 BlueXP 계정 ID를 얻어야 합니다. API 호출을 할 때 인증 헤더에 토큰과 계정 ID를 추가해야 합니다.
 
 .단계
-. NetApp Cloud Central에서 사용자 토큰을 얻습니다.
+. NetApp BlueXP에서 사용자 토큰을 얻습니다.
 +
 [source, http]
 ----
@@ -39,7 +39,7 @@ Body:
               "password": "<user_password>"
 }
 ----
-. Cloud Central 계정 ID를 받습니다.
+. BlueXp 계정 ID를 얻습니다.
 +
 [source, http]
 ----
@@ -80,7 +80,7 @@ Body: { "name": "databroker1", "type": "AZURE" }
 
 .토큰이 만료되면 어떻게 해야 합니까?
 ****
-NetApp Cloud Central의 사용자 토큰에 만료일이 있습니다. 토큰을 새로 고치려면 1단계에서 API를 다시 호출해야 합니다.
+NetApp BlueXp의 사용자 토큰의 만료일이 있습니다. 토큰을 새로 고치려면 1단계에서 API를 다시 호출해야 합니다.
 
 API 응답에는 토큰이 만료되는 시점을 나타내는 "expires_in" 필드가 포함됩니다.
 
