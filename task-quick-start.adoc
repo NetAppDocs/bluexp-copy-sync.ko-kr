@@ -54,7 +54,7 @@ Cloud Sync는 동기화 관계를 생성할 때 설치 프로세스를 안내하
 
 
 [role="quick-margin-para"]
-에 로그인합니다 https://cloudmanager.netapp.com/["BlueXP"^]를 클릭하고 * 동기화 * 를 클릭한 다음 선택한 소스 및 대상을 끌어서 놓습니다. 화면의 지시에 따라 설치를 완료합니다. link:task-creating-relationships.html["자세한 정보"].
+에 로그인합니다 https://console.bluexp.netapp.com/["BlueXP"^]를 클릭하고 * 동기화 * 를 클릭한 다음 선택한 소스 및 대상을 끌어서 놓습니다. 화면의 지시에 따라 설치를 완료합니다. link:task-creating-relationships.html["자세한 정보"].
 
 [role="quick-margin-para"]
 AWS 또는 Azure에서 가입하여 용량제 또는 연간 지불 가능합니다. 또는 NetApp에서 직접 라이센스를 구입합니다. Cloud Sync의 라이센스 설정 페이지로 이동하여 설정하기만 하면 됩니다. link:task-licensing.html["자세한 정보"].

@@ -990,7 +990,6 @@
   <block id="ebd974875888e4cb1567f55e3466cda1" category="cell">설치 및 업데이트 중에 데이터 브로커 가상 머신에 7z를 설치하려면 다음을 수행합니다. 7z는 NetApp 기술 지원 팀에 AutoSupport 메시지 전송 기능이 필요합니다.</block>
   <block id="6af6c652626660023ec712f6c15bbc0a" category="cell">https://sts.amazonaws.com 으로 문의하십시오</block>
   <block id="89100474e7faee0c34727c4b2b471007" category="cell">데이터 브로커가 AWS에 구축되거나 사내 구축 시에 AWS 자격 증명이 제공되고 AWS 자격 증명이 제공됩니다. 데이터 브로커가 배포, 업데이트 및 재시작 중에 이 엔드포인트에 연결합니다.</block>
-  <block id="6f47e3c3a8d9335c299efee22582068c" category="cell">https://cloudmanager.cloud.netapp.com \https://netapp-cloud-account.auth0.com 으로 문의하십시오</block>
   <block id="7f13eefefc02d429e3f594cb6d48d10e" category="cell">데이터 센스를 사용하여 새 동기화 관계를 위한 소스 파일을 선택할 때 클라우드 데이터 센스에 문의하려면</block>
   <block id="6a3cdc9a7bccf7b319d4cd575bb3b01f" category="section-title">웹 브라우저 끝점</block>
   <block id="fd0cb271f0ac093ecb033a2bfea34fbd" category="paragraph">문제 해결을 위해 로그를 다운로드하려면 웹 브라우저에서 다음 끝점에 액세스해야 합니다.</block>
@@ -1567,9 +1566,7 @@
   <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">NetApp이 처음입니다</block>
   <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">NetApp에 등록하는 방법을 알아보십시오</block>
   <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>.</block>
-  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">지원 대시보드를 통해 NetApp Support 사이트 계정을 추가하고 관리하여 Cloud Manager와 함께 사용할 수 있습니다.</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">고객 수준 계정이 있는 경우 하나 이상의 NSS 계정을 추가할 수 있습니다.</block>
-  <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">파트너 또는 리셀러 계정이 있는 경우 NSS 계정을 하나 이상 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.</block>
   <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">계정은 고객 수준 계정이어야 합니다(게스트 또는 임시 계정이 아님).</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">세 개의 가로 점으로 구성된 아이콘</block>
   <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">로그인에 성공하면 NetApp은 NSS 사용자 이름을 저장합니다. 이 ID는 이메일에 매핑되는 시스템에서 생성된 ID입니다. NSS 관리 * 페이지의 에서 이메일을 표시할 수 있습니다 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
@@ -1585,16 +1582,13 @@
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support 사이트 사용자 등록 양식</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">를 완료하여 NetApp Support 사이트 계정을 생성합니다<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">적절한 사용자 레벨(일반적으로 * NetApp 고객/최종 사용자 *)을 선택해야 합니다.</block>
-  <block id="d6cb31c22f8f843a781cccec33157281" category="list-text">일련 번호 필드에 위에서 사용된 Cloud Manager 계정 일련 번호(960xxxx)를 복사합니다. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp이 처음이었습니다</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">NetApp의 새로운 브랜드이고 NSS 계정이 없는 경우 아래의 각 단계를 수행하십시오.</block>
-  <block id="59dd2a274c2c6a3cc5b3dce08109019d" category="list-text">지원 등록 페이지에서 Cloud Manager 계정 ID 일련 번호를 찾습니다.</block>
   <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp의 지원 등록 사이트</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">로 이동합니다<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 를 선택하고 * 등록된 NetApp 고객이 아닙니다 * 를 선택합니다.</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">필수 필드(빨간색 별표가 있는 필드)를 입력합니다.</block>
   <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">[제품 라인] * 필드에서 * Cloud Manager * 를 선택한 다음 해당 청구 공급자를 선택합니다.</block>
-  <block id="1192dec4cc2b923397748a651cef178f" category="list-text">위의 2단계에서 Cloud Manager 계정의 일련 번호를 복사하고 보안 검색을 완료한 다음 NetApp의 글로벌 데이터 개인 정보 보호 정책을 읽는지 확인합니다.</block>
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">이 보안 트랜잭션을 완료하기 위해 제공된 사서함으로 즉시 이메일이 전송됩니다. 몇 분 내에 확인 이메일이 도착하지 않으면 스팸 폴더를 확인해야 합니다.</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">이메일 내에서 작업을 확인합니다.</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">확인 시 NetApp에 요청이 제출되고 NetApp Support 사이트 계정을 만들 것을 권장합니다.</block>
@@ -1628,7 +1622,6 @@
   <block id="89e019c15bf54627a2a1e4918e66bab6" category="inline-link">BlueXP를 시작하는 방법에 대해 알아보십시오</block>
   <block id="69c4d579a506c05e94d3e4986ec536a3" category="list-text"><block ref="69c4d579a506c05e94d3e4986ec536a3" category="inline-link-rx"></block></block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link">BlueXP</block>
-  <block id="7aedb7a8840bf63ff8088dc466015c95" category="paragraph">에 로그인합니다<block ref="d85b267f9a6ceedd0cd11e64f7f19978" category="inline-link-rx"></block>를 클릭하고 * 동기화 * 를 클릭한 다음 선택한 소스 및 대상을 끌어서 놓습니다. 화면의 지시에 따라 설치를 완료합니다. <block ref="484d4f19cf4f8d33cb3a1a91aa23f363" category="inline-link-macro-rx"></block>.</block>
   <block id="17bed77c4f760aaf5e0b9c31b33fdd66" category="paragraph">Cloud Sync는 * 동기화 * 탭의 BlueXP 웹 사이트에서 사용할 수 있습니다.</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">NetApp 기술 지원 팀과 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 BlueXP에 추가한 다음 지원 등록을 해야 합니다.</block>
   <block id="8bf30fadf784022b073adb9233678a71" category="paragraph">NetApp 기술 지원 팀의 지원 케이스를 생성하기 전에 NetApp Support 사이트(NSS) 계정을 BlueXP에 추가한 다음 지원 등록을 해야 합니다.</block>
@@ -1679,4 +1672,11 @@
   <block id="2120ca0a41cdfe67b77a3af2e3123d51" category="paragraph">BlueXP에 로그인한 후 맨 위에 있는 동기화 탭으로 전환하고 이전과 마찬가지로 관계를 볼 수 있습니다.</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP 블로그</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
+  <block id="e7972d5601badb4c5fcefad96c59c2fc" category="cell">https://console.bluexp.netapp.com/ \https://netapp-cloud-account.auth0.com 으로 문의하십시오</block>
+  <block id="5a6f95f0d3a768c4ec5fabda878a438c" category="paragraph">에 로그인합니다<block ref="a52ee1b87e73428b189d0907dc7fe59b" category="inline-link-rx"></block>를 클릭하고 * 동기화 * 를 클릭한 다음 선택한 소스 및 대상을 끌어서 놓습니다. 화면의 지시에 따라 설치를 완료합니다. <block ref="484d4f19cf4f8d33cb3a1a91aa23f363" category="inline-link-macro-rx"></block>.</block>
+  <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">지원 대시보드를 통해 NetApp Support 사이트 계정을 추가하고 관리하여 BlueXP에서 사용할 수 있습니다.</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">파트너 또는 리셀러 계정이 있는 경우 NSS 계정을 하나 이상 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">지원 등록 페이지에서 계정 ID 일련 번호를 찾습니다.</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">위의 2단계에서 계정의 일련 번호를 복사하고 보안 검색을 완료한 다음 NetApp의 글로벌 데이터 개인 정보 보호 정책을 읽는지 확인합니다.</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">일련 번호 필드에 위에서 사용된 계정 일련 번호(960xxxx)를 복사해 주십시오. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
 </blocks>
