@@ -17,12 +17,15 @@ Amazon S3, Azure 또는 Google Cloud 자격 증명이 필요한 동기화 관계
 
 이 기능은 Amazon S3, Azure 또는 Google Cloud 자격 증명이 필요한 동기화 관계가 있는 Cloud Sync API를 통해 지원됩니다.
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 볼트를 준비합니다
 [role="quick-margin-para"]
 URL을 설정하여 데이터 브로커 그룹에 자격 증명을 제공할 볼트를 준비합니다. 볼트의 비밀에 대한 URL은 _creds_로 끝나야 합니다.
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 데이터 브로커 그룹을 준비합니다
 [role="quick-margin-para"]
 그룹의 각 데이터 브로커에 대한 로컬 구성 파일을 수정하여 외부 볼트에서 자격 증명을 가져오도록 데이터 브로커 그룹을 준비합니다.
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] API를 사용하여 동기화 관계를 생성합니다
 [role="quick-margin-para"]
 이제 모든 것이 설정되었으므로 API 호출을 전송하여 볼트를 사용하는 동기화 관계를 만들어 비밀을 가져올 수 있습니다.
 

@@ -18,6 +18,30 @@ Cloud Sync의 새로운 기능에 대해 알아보십시오.
 
 
 
+== 2022년 12월 11일
+
+
+
+=== 이름별로 디렉토리를 필터링합니다
+
+이제 새 * 디렉터리 이름 제외 * 설정을 동기화 관계에 사용할 수 있습니다. 사용자는 동기화에서 최대 15개의 디렉터리 이름을 필터링할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["디렉터리 이름 제외 설정에 대해 자세히 알아보세요"].
+
+
+
+== Amazon S3 및 ONTAP S3 스토리지 추가 지원
+
+Cloud Sync은 이제 AWS S3 및 ONTAP S3 스토리지를 위한 추가 동기화 관계를 지원합니다.
+
+* AWS S3에서 ONTAP S3 스토리지까지
+* ONTAP S3 스토리지를 AWS S3로 설정합니다
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계에 대해 자세히 알아보십시오"].
+
+
+
 == 2022년 10월 30일
 
 

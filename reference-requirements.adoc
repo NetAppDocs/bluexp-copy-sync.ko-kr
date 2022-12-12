@@ -56,7 +56,7 @@ NOTE: 데이터 브로커에서는 기본적으로 .snapshot,~snapshot,.copy-off
 
 
 
-== Amazon S3 버킷 요구 사항
+== [[S3]] Amazon S3 버킷 요구사항
 
 Amazon S3 버킷이 다음 요구사항을 충족하는지 확인하십시오.
 
@@ -103,7 +103,7 @@ image:screenshot_iam_role_arn.gif["역할 ARN을 보여 주는 AWS IAM 콘솔 �
 
 
 
-== Azure Blob 스토리지 요구 사항
+== [[blob]] Azure Blob 저장소 요구 사항
 
 Azure Blob 저장소가 다음 요구사항을 충족하는지 확인합니다.
 
@@ -186,7 +186,7 @@ link:task-managing-data-brokers.html#define-a-unified-configuration-for-a-data-b
 
 
 
-== Google Cloud Storage 버킷 요구 사항
+== [[Google]] Google Cloud Storage 버킷 요구사항
 
 Google Cloud Storage 버킷이 다음 요구사항을 충족하는지 확인하십시오.
 

@@ -132,6 +132,7 @@ image:screenshot_sync_group_edit.gif["그룹의 각 개별 데이터 브로커�
 . 새 이름을 입력하고 * 저장 * 을 클릭합니다.
 
 
+.결과
 Cloud Sync가 데이터 브로커 그룹의 이름을 업데이트합니다.
 
 
@@ -187,6 +188,7 @@ image:screenshot_sync_group_remove.png["각 개별 데이터 브로커 그룹에
 . 이동 * 을 클릭합니다.
 
 
+.결과
 Cloud Sync는 데이터 브로커를 신규 또는 기존 데이터 브로커 그룹으로 옮깁니다. 이전 그룹에 다른 데이터 브로커가 없으면 Cloud Sync에서 삭제합니다.
 
 
@@ -203,6 +205,7 @@ Cloud Sync는 데이터 브로커를 신규 또는 기존 데이터 브로커 �
 . Update * 를 클릭합니다.
 
 
+.결과
 Cloud Sync는 데이터 브로커를 업데이트하여 인터넷 액세스에 프록시 구성을 사용합니다.
 
 
@@ -272,6 +275,7 @@ image:screenshot_sync_group_remove.gif["각 개별 데이터 브로커 그룹에
 . 데이터 브로커 * 제거 를 클릭합니다.
 
 
+.결과
 Cloud Sync는 그룹에서 데이터 브로커를 제거합니다.
 
 
@@ -291,4 +295,5 @@ image:screenshot_sync_group_add.png["그룹의 각 개별 데이터 브로커에
 . 확인하려면 그룹 이름을 입력하고 * 그룹 삭제 * 를 클릭합니다.
 
 
+.결과
 Cloud Sync는 데이터 브로커를 제거하고 그룹을 삭제합니다.
