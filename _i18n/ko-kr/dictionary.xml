@@ -1689,7 +1689,6 @@
   <block id="4faa53699bc5575d520ebbbdbdcb3676" category="section-title">[[라이센스]] NetApp에서 라이센스를 구입하고 Cloud Sync에 추가합니다</block>
   <block id="5912630061434e78e733b8d5e5e3dc88" category="section-title">2022년 12월 11일</block>
   <block id="9709c6ba9ff4b10cb5ec3f4f956d3226" category="section-title">이름별로 디렉토리를 필터링합니다</block>
-  <block id="7b9790a244d066462a8602bd0a61ba73" category="paragraph">이제 새 * 디렉터리 이름 제외 * 설정을 동기화 관계에 사용할 수 있습니다. 사용자는 동기화에서 최대 15개의 디렉터리 이름을 필터링할 수 있습니다.</block>
   <block id="84a8ea117dd9c6b8ddbbe8f47665f923" category="inline-link">디렉터리 이름 제외 설정에 대해 자세히 알아보세요</block>
   <block id="8391e3aac2d2f8dd1b8e38350d072463" category="paragraph"><block ref="018123db357961d73398ef3066f74a1b" category="inline-link-rx"></block>.</block>
   <block id="211e17aac7e6f53a17024d84713e8c34" category="section-title">Amazon S3 및 ONTAP S3 스토리지 추가 지원</block>
@@ -1709,4 +1708,5 @@
   <block id="157e0bfc3909da4f9907f6377e70c5d2" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 무료 평가판이 종료된 후 동기화 관계에 대한 비용을 지불하십시오</block>
   <block id="f8fb6587a32dba313e626666cb0364a8" category="list-text">디렉터리 이름을 제외합니다</block>
   <block id="baf659a0894b31eff8d9e87af59af9e5" category="list-text">이름을 입력하고 * Enter * 를 눌러 동기화에서 제외할 최대 15개의 디렉토리를 지정합니다. copy-offload, .snapshot, ~snapshot 디렉토리는 기본적으로 제외됩니다. 이 항목을 동기화에 포함시키려면 당사로 문의해 주십시오.</block>
+  <block id="43b44f78e255d05aac846a6181095cd6" category="paragraph">이제 새 * 디렉터리 이름 제외 * 설정을 동기화 관계에 사용할 수 있습니다. 사용자는 동기화에서 최대 15개의 디렉터리 이름을 필터링할 수 있습니다. copy-offload, .snapshot, ~snapshot 디렉토리는 기본적으로 제외됩니다.</block>
 </blocks>
