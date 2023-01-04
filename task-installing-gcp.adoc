@@ -166,6 +166,6 @@ Cloud Sync은 다음 구성을 사용하여 Google Cloud에서 데이터 브로�
 기계 유형:: N2-표준-4
 vCPU:: 4
 RAM:: 15GB
-운영 체제:: Red Hat Enterprise Linux 7.7
+운영 체제:: Rocky Linux 9.0
 디스크 크기 및 유형입니다:: 20GB HDD PD 표준
 

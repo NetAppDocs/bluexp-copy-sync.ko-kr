@@ -642,7 +642,6 @@
   <block id="c233ea2db8aa00ac96e4e0317d97f7ed" category="paragraph">Cloud Sync은 다음 구성을 사용하여 Google Cloud에서 데이터 브로커를 생성합니다.</block>
   <block id="3ea4bf9da7622edeeae1bf80e9c5cded" category="list-text">기계 유형</block>
   <block id="9f101c0e6e5929a04c9e7663fdf91eda" category="list-text">15GB</block>
-  <block id="935b9daeec310c8e2291d043d3e14f44" category="list-text">Red Hat Enterprise Linux 7.7</block>
   <block id="f3796c63e27caa7881ad0844ee9e9544" category="list-text">20GB HDD PD 표준</block>
   <block id="b7313c752ca12081edfba2212c0cc2e4" category="summary">데이터를 즉시 동기화하고 일정을 변경하는 등 동기화 관계를 언제든지 관리할 수 있습니다.</block>
   <block id="d45779d5d4d94ce3569ba04a2f510bdc" category="doc">동기화 관계 관리</block>
@@ -1022,7 +1021,6 @@
   <block id="de66cb8e421123abb772a3664a897531" category="list-text">표준 DS4 v2</block>
   <block id="c9f0f895fb98ab9159f51fd0297e236d" category="list-text">8</block>
   <block id="472d573b9b96b332aa4fd565b8a78c68" category="list-text">28GB</block>
-  <block id="b0a4a3d9e04daf57d04de7ad03004279" category="list-text">CentOS 7.7</block>
   <block id="d6856312a90199668ecb7d8f4a9f1322" category="list-text">64GB 프리미엄 SSD</block>
   <block id="f549fa5a7b8a70265d3f6f6fc5ae1943" category="summary">소스와 타겟이 다음 요구 사항을 충족하는지 확인합니다.</block>
   <block id="91271a9aaf4442f8d73b827c3ba05c53" category="doc">소스와 타겟을 준비합니다</block>
@@ -1710,4 +1708,16 @@
   <block id="baf659a0894b31eff8d9e87af59af9e5" category="list-text">이름을 입력하고 * Enter * 를 눌러 동기화에서 제외할 최대 15개의 디렉토리를 지정합니다. copy-offload, .snapshot, ~snapshot 디렉토리는 기본적으로 제외됩니다. 이 항목을 동기화에 포함시키려면 당사로 문의해 주십시오.</block>
   <block id="43b44f78e255d05aac846a6181095cd6" category="paragraph">이제 새 * 디렉터리 이름 제외 * 설정을 동기화 관계에 사용할 수 있습니다. 사용자는 동기화에서 최대 15개의 디렉터리 이름을 필터링할 수 있습니다. copy-offload, .snapshot, ~snapshot 디렉토리는 기본적으로 제외됩니다.</block>
   <block id="109c4a4872ddbe9910e974f2b3dd0211" category="admonition">클라이언트 ID가 없는 개인 전자 메일 계정을 사용하는 경우 기본 클라이언트 ID "QC3AgHk6qdbmC7Yyr82ApBwaraJLwrNO"를 사용할 수 있습니다.</block>
+  <block id="003d136e5089a4f9ae0f1df3f6fc37fa" category="list-text">Rocky Linux 9.0</block>
+  <block id="bfc6fe3f8d2577420634f29daac2cfe3" category="section-title">2023년 1월 3일</block>
+  <block id="2ce75b34222d130ea74078b75eb79cc0" category="section-title">UI에서 데이터 브로커 로컬 구성을 표시합니다</block>
+  <block id="88dcb8d0dd987f4f5606df5981050a8d" category="paragraph">이제 사용자가 UI에서 각 데이터 브로커의 로컬 구성을 볼 수 있는 * 구성 표시 * 옵션이 있습니다.</block>
+  <block id="44580ec91e2012543452f790258e1ccf" category="inline-link">데이터 브로커 그룹 관리에 대해 자세히 알아보십시오</block>
+  <block id="1bc15ec9e137e3d7653e9f04a08b840b" category="paragraph"><block ref="cbafc7311a6970273ad5a1c3b2c0b656" category="inline-link-rx"></block>.</block>
+  <block id="02840b44154535342dd4cf6739d2c77d" category="section-title">Azure 및 Google Cloud 데이터 브로커 운영 체제로 업그레이드하십시오</block>
+  <block id="69e30db11dbff8b5efd6091166af232f" category="paragraph">Azure 및 Google Cloud의 데이터 브로커용 운영 체제가 Rocky Linux 9.0으로 업그레이드되었습니다.</block>
+  <block id="1c01c907ca0a713df58ba8f4b21fd39c" category="inline-link">Azure의 데이터 브로커 인스턴스에 대해 자세히 알아보십시오</block>
+  <block id="696fb1a24aae70782cbc2deebfd01ec3" category="paragraph"><block ref="721924a927b7206a5d8775fe840ddbcd" category="inline-link-rx"></block>.</block>
+  <block id="648e059d69339d82d82738abf0bd4016" category="inline-link">Google Cloud의 데이터 브로커 인스턴스에 대해 자세히 알아보십시오</block>
+  <block id="6619068f4ac101fa3e8003ee6618d9da" category="paragraph"><block ref="fa611f614e55d9a2ca38028d5a5ab5b7" category="inline-link-rx"></block>.</block>
 </blocks>
