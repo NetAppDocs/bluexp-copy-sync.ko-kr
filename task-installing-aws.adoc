@@ -123,6 +123,6 @@ Cloud Sync은 다음 구성을 사용하여 AWS에서 데이터 브로커를 생
 인스턴스 유형:: m5n.xlarge(m5n.xlarge)(해당 지역에서 사용할 수 있는 경우), 그렇지 않은 경우 m5.xlarge
 vCPU:: 4
 RAM:: 16GB
-운영 체제:: Amazon Linux 2
+운영 체제:: Amazon Linux 2022
 디스크 크기 및 유형입니다:: 10GB GP2 SSD
 

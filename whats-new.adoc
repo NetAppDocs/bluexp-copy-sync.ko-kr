@@ -18,6 +18,39 @@ Cloud Sync의 새로운 기능에 대해 알아보십시오.
 
 
 
+== 2023년 2월 5일
+
+
+
+=== Azure Data Lake Storage Gen2, ONTAP S3 Storage 및 NFS에 대한 추가 지원
+
+Cloud Sync은 이제 ONTAP S3 스토리지 및 NFS에 대한 추가 동기화 관계를 지원합니다.
+
+* ONTAP S3 스토리지를 NFS로
+* NFS에서 ONTAP S3 스토리지로
+
+
+또한 Cloud Sync는 Azure Data Lake Storage Gen2를 소스 및 타겟 모두에서 추가로 지원합니다.
+
+* NFS 서버
+* SMB 서버
+* ONTAP S3 스토리지
+* StorageGRID
+* IBM 클라우드 오브젝트 스토리지
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계에 대해 자세히 알아보십시오"].
+
+
+
+=== Amazon Web Services 데이터 브로커 운영 체제로 업그레이드하십시오
+
+AWS 데이터 브로커용 운영 체제가 Amazon Linux 2022로 업그레이드되었습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#details-about-the-data-broker-instance["AWS의 데이터 브로커 인스턴스에 대해 자세히 알아보십시오"].
+
+
+
 == 2023년 1월 3일
 
 

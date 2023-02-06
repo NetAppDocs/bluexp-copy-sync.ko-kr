@@ -96,6 +96,16 @@ Cloud Sync를 사용하면 소스에서 타겟으로 데이터를 동기화할 �
 
 
 
+| Azure Data Lake Storage Gen2  a| 
+* IBM 클라우드 오브젝트 스토리지
+* NFS 서버
+* ONTAP S3 스토리지
+* SMB 서버
+* StorageGRID
+
+
+
+
 | Azure NetApp Files  a| 
 * Amazon EFS
 * ONTAP용 Amazon FSx
@@ -223,6 +233,7 @@ Cloud Sync를 사용하면 소스에서 타겟으로 데이터를 동기화할 �
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버
 * 사내 ONTAP 클러스터
+* ONTAP S3 스토리지
 * SMB 서버
 * StorageGRID
 
@@ -249,7 +260,9 @@ Cloud Sync를 사용하면 소스에서 타겟으로 데이터를 동기화할 �
 
 | ONTAP S3 스토리지  a| 
 * Amazon S3
+* Azure Data Lake Storage Gen2
 * Google 클라우드 스토리지
+* NFS 서버
 * SMB 서버
 * StorageGRID
 * ONTAP S3 스토리지
