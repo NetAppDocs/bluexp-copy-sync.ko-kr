@@ -85,7 +85,13 @@ NetApp 데이터 브로커는 포트 443을 통한 아웃바운드 인터넷 액
 | https://s3._region_.amazonaws.com 예: s3.us-east-2.amazonaws.com:443https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region["S3 엔드포인트 목록은 AWS 설명서를 참조하십시오"^] | 동기화 관계에 S3 버킷이 포함된 경우 Amazon S3에 연락하려면 
 
 
-| https://s3.us-east-1.amazonaws.com 으로 문의하십시오 | Cloud Sync에서 데이터 브로커 로그를 다운로드하면 데이터 브로커가 로그 디렉토리를 지퍼하고 로그를 us-east-1 지역의 미리 정의된 S3 버킷으로 업로드합니다. 
+| https://s3.amazonaws.com/ 으로 문의하십시오 | Cloud Sync에서 데이터 브로커 로그를 다운로드하면 데이터 브로커가 로그 디렉토리를 지퍼하고 로그를 us-east-1 지역의 미리 정의된 S3 버킷으로 업로드합니다. 
+
+
+| https://storage.googleapis.com/ 으로 문의하십시오 | 동기화 관계가 GCP 버킷을 사용할 때 Google Cloud에 연락하는 방법 
+
+
+| https://_storage-account_.blob.core.windows.net[]Azure Data Lake Gen2 사용 시:https://_storage-account_.dfs.core.windows.net[]여기서 _storage -account_는 사용자의 소스 저장소 계정입니다. | 사용자의 Azure 저장소 계정 주소에 대한 프록시를 엽니다. 
 
 
 | https://cf.cloudsync.netapp.com \https://repo.cloudsync.netapp.com 으로 문의하십시오 | Cloud Sync 서비스에 문의하십시오. 
@@ -101,6 +107,12 @@ NetApp 데이터 브로커는 포트 443을 통한 아웃바운드 인터넷 액
 
 
 | https://console.bluexp.netapp.com/ \https://netapp-cloud-account.auth0.com 으로 문의하십시오 | 데이터 센스를 사용하여 새 동기화 관계를 위한 소스 파일을 선택할 때 클라우드 데이터 센스에 문의하려면 
+
+
+| https://pubsub.googleapis.com 으로 문의하십시오 | Google 저장소 계정에서 연속 동기화 관계를 생성하는 경우 
+
+
+| https://_storage-account_.queue.core.windows.net[]https://management.azure.com/subscriptions/${_subscriptionId_} /resourceGroups/${_resourceGroup_} /providers/Microsoft.EventGrid/* 여기서 _storage-account_는 사용자의 소스 저장소 계정이고, _subscribionid_는 소스 구독 ID이고, _resourceGroup_은 소스 리소스 그룹입니다. | Azure 저장소 계정에서 연속 동기화 관계를 생성하는 경우 
 |===
 
 

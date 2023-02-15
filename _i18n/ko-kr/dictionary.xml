@@ -972,7 +972,6 @@
   <block id="45edaabb1caa8cd386fc00e4913729ca" category="inline-link">S3 엔드포인트 목록은 AWS 설명서를 참조하십시오</block>
   <block id="9f63373541da1493d909ee0e1ec22846" category="cell">https://s3._region_.amazonaws.com 예: s3.us-east-2.amazonaws.com:443<block ref="d8eaf9479c9110a7b925275e0e7c77be" category="inline-link-rx"></block></block>
   <block id="1331ac21e3550225dbf1a2a59e8e5854" category="cell">동기화 관계에 S3 버킷이 포함된 경우 Amazon S3에 연락하려면</block>
-  <block id="e539bdc84a7ad2c400eb37a683413da0" category="cell">https://s3.us-east-1.amazonaws.com 으로 문의하십시오</block>
   <block id="aa3f7e10351bf8715f83a7b981f0d036" category="cell">Cloud Sync에서 데이터 브로커 로그를 다운로드하면 데이터 브로커가 로그 디렉토리를 지퍼하고 로그를 us-east-1 지역의 미리 정의된 S3 버킷으로 업로드합니다.</block>
   <block id="af9cee3d0b730812cc44778c77dac990" category="cell">https://cf.cloudsync.netapp.com \https://repo.cloudsync.netapp.com 으로 문의하십시오</block>
   <block id="0085c0d222fb9e00710dfd4737377552" category="cell">Cloud Sync 서비스에 문의하십시오.</block>
@@ -1736,4 +1735,13 @@
   <block id="eec85122fe4236e8000e41a3f717acba" category="paragraph">라이센스는 Cloud Sync 또는 해당 웹 사이트를 통해 관리해야 하며 * 디지털 지갑을 통해 관리해서는 안 됩니다.</block>
   <block id="ea456f2c2f8433045e0abd1d56195f2d" category="paragraph">무료 평가판이 종료된 후 즉시 지불하지 않으면 추가 관계를 만들 수 없습니다. 기존 관계는 삭제되지 않지만 라이선스를 구독하거나 입력할 때까지 관계를 변경할 수 없습니다.</block>
   <block id="99fbad4150cbcaf5ed561c48046b6f75" category="paragraph">NetApp에서 구매한 Cloud Sync 라이센스를 연장한 경우, 새 만료 날짜는 Cloud Sync에서 자동으로 업데이트되지 않습니다. 만료 날짜를 새로 고치려면 라이센스를 다시 추가해야 합니다. 라이센스는 Cloud Sync 또는 해당 웹 사이트를 통해 관리해야 하며 * 디지털 지갑을 통해 관리해서는 안 됩니다.</block>
+  <block id="e46ce6b98b1f39550f722c298fdb33a7" category="cell">https://s3.amazonaws.com/ 으로 문의하십시오</block>
+  <block id="410854d72f81ddbce62fd5e69e47d7ca" category="cell">https://storage.googleapis.com/ 으로 문의하십시오</block>
+  <block id="9a0fd273aee1cf8a769c1b999cacf89a" category="cell">동기화 관계가 GCP 버킷을 사용할 때 Google Cloud에 연락하는 방법</block>
+  <block id="b551e27fff37843412867d9b83f93ece" category="cell"><block ref="7e48312ae0f59f2ef044bd982e8f7f9d" category="inline-link-rx"></block>Azure Data Lake Gen2 사용 시:<block ref="88fc93a3f957963f811734b1373f239a" category="inline-link-rx"></block>여기서 _storage -account_는 사용자의 소스 저장소 계정입니다.</block>
+  <block id="ab1f4fe880debf39d6d2c82a8b44dd19" category="cell">사용자의 Azure 저장소 계정 주소에 대한 프록시를 엽니다.</block>
+  <block id="8f606ab2764de8092de1ca0d967cfb8d" category="cell">https://pubsub.googleapis.com 으로 문의하십시오</block>
+  <block id="df94b5032f4c4edc418da1de5a985935" category="cell">Google 저장소 계정에서 연속 동기화 관계를 생성하는 경우</block>
+  <block id="cfcdd9e78004b91f8c395165fdb5e282" category="cell"><block ref="e36a49efb19686edd0dc8263877ab168" category="inline-link-rx"></block>https://management.azure.com/subscriptions/${_subscriptionId_} /resourceGroups/${_resourceGroup_} /providers/Microsoft.EventGrid/* 여기서 _storage-account_는 사용자의 소스 저장소 계정이고, _subscribionid_는 소스 구독 ID이고, _resourceGroup_은 소스 리소스 그룹입니다.</block>
+  <block id="86725349e0c402312a901a9555773dbd" category="cell">Azure 저장소 계정에서 연속 동기화 관계를 생성하는 경우</block>
 </blocks>
