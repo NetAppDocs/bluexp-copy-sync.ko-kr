@@ -1145,9 +1145,7 @@
   <block id="e9b07c7994659b124430d0e4daaeabba" category="paragraph">새 데이터 브로커 그룹을 생성할 때 사내 Linux 호스트 또는 클라우드의 기존 Linux 호스트에 데이터 브로커 소프트웨어를 설치하려면 온프레미스 데이터 브로커 옵션을 선택합니다. Cloud Sync는 설치 프로세스를 안내하지만 설치 준비에 도움이 되도록 이 페이지에서 요구 사항과 단계를 반복합니다.</block>
   <block id="ace028fe1c5dc8fb39091440d89fd9fd" category="section-title">Linux 호스트 요구 사항</block>
   <block id="17308c76959fcb971603b7274a57c128" category="list-text">* 운영 체제 *:</block>
-  <block id="1a2698aea8c50e468148bb22c28bf853" category="list-text">CentOS 7.0, 7.7 및 8.0</block>
   <block id="735736a0904d4dd4641f1c0b6e93ac7a" category="paragraph">CentOS 스트림은 지원되지 않습니다.</block>
-  <block id="438c134de8e5d04ae91ce2fc1f48f114" category="list-text">Red Hat Enterprise Linux 7.7 및 8.0</block>
   <block id="083265255bba92c059791cd3a9803274" category="list-text">Ubuntu 서버 20.04 LTS</block>
   <block id="473733802c02f67f489689f787461e62" category="list-text">SUSE Linux Enterprise Server 15 SP1</block>
   <block id="35ec85020897e56acfca830003a03e8c" category="paragraph">Red Hat Enterprise Linux 시스템은 Red Hat 서브스크립션 관리 에 등록되어 있어야 합니다. 등록되지 않은 경우, 시스템은 설치 중에 필요한 타사 소프트웨어를 업데이트하기 위해 리포지토리에 액세스할 수 없습니다.</block>
@@ -1785,4 +1783,7 @@
   <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">이 ID는 이메일에 매핑되는 시스템 생성 ID입니다. NSS 관리 * 페이지의 에서 이메일을 표시할 수 있습니다 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
   <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 에 * 자격 증명 업데이트 * 옵션이 있습니다 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">이 옵션을 사용하면 다시 로그인하라는 메시지가 표시됩니다. 이러한 계정의 토큰은 90일 후에 만료됩니다. 이를 알리는 알림이 게시됩니다.</block>
+  <block id="deb96f2e04c20206372a663fc1e22a63" category="list-text">CentOS 8.0 및 8.5</block>
+  <block id="baefe41a5ed4db05fd518fa49dfbd17d" category="list-text">Red Hat Enterprise Linux 8.0 및 8.5</block>
+  <block id="cf76271f717860ca93c6825568b0690d" category="list-text">록키 리눅스 9</block>
 </blocks>
