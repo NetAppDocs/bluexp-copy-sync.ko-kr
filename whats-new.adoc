@@ -18,6 +18,32 @@ Cloud Sync의 새로운 기능에 대해 알아보십시오.
 
 
 
+== 2 2023년 4월
+
+
+
+=== Azure Data Lake Storage Gen2 관계에 대한 추가 지원
+
+이제 다음을 통해 Azure Data Lake Storage Gen2를 소스 및 타겟으로 동기화 관계를 생성할 수 있습니다.
+
+* Azure NetApp Files
+* ONTAP용 Amazon FSx
+* Cloud Volumes ONTAP
+* 사내 ONTAP
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계에 대해 자세히 알아보십시오"].
+
+
+
+=== 전체 경로를 기준으로 디렉토리를 필터링합니다
+
+이름을 기준으로 디렉토리를 필터링하는 것 외에도 전체 경로를 기준으로 디렉토리를 필터링할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["디렉터리 제외 설정에 대해 자세히 알아보세요"].
+
+
+
 == 2023년 3월 7일
 
 
