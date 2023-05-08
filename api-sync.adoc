@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: api-sync.html 
 keywords: api, apis, rest, restful, authorization, getting started, body, header, token, reference, expired token, expires, expired, token expired, list apis, 202, https status code 202, status code 202, id, id field, box 
-summary: 웹 UI를 통해 제공되는 Cloud Sync 기능은 RESTful API를 통해서도 사용할 수 있습니다. 
+summary: 웹 UI를 통해 사용할 수 있는 BlueXP 복사 및 동기화 기능은 RESTful API를 통해서도 사용할 수 있습니다. 
 ---
-= Cloud Sync API
+= BlueXP 복제 및 동기화 API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 웹 UI를 통해 제공되는 Cloud Sync 기능은 RESTful API를 통�
 
 
 [role="lead"]
-웹 UI를 통해 사용할 수 있는 Cloud Sync 기능은 RESTful API를 통해서도 사용할 수 있습니다.
+웹 UI를 통해 사용할 수 있는 BlueXP 복사 및 동기화 기능은 RESTful API를 통해서도 사용할 수 있습니다.
 
 
 
 == 시작하기
 
-Cloud Sync API를 시작하려면 사용자 토큰과 BlueXP 계정 ID를 얻어야 합니다. API 호출을 할 때 인증 헤더에 토큰과 계정 ID를 추가해야 합니다.
+BlueXP 복사 및 동기화 API를 시작하려면 사용자 토큰과 BlueXP 계정 ID를 얻어야 합니다. API 호출을 할 때 인증 헤더에 토큰과 계정 ID를 추가해야 합니다.
 
 .단계
 . NetApp BlueXP에서 사용자 토큰을 얻습니다.
@@ -94,7 +94,7 @@ API 응답에는 토큰이 만료되는 시점을 나타내는 "expires_in" 필�
 
 == API 참조입니다
 
-각 Cloud Sync API에 대한 설명서는 에서 확인할 수 있습니다 https://api.cloudsync.netapp.com/docs[].
+각 BlueXP 사본 및 동기화 API에 대한 설명서는 에서 구할 수 있습니다 https://api.cloudsync.netapp.com/docs[].
 
 
 

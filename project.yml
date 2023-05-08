@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Cloud Sync
+  name: BlueXP copy and sync
   harmony_integration: maestro
   platform: cloud
   internal:
@@ -12,7 +12,7 @@ settings:
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: Cloud Sync 문서
+  - title: BlueXP 문서 복사 및 동기화
     url: "/index.html"
   - title: 릴리스 정보
     entries:
@@ -22,7 +22,7 @@ sidebar:
       url: "/reference-limitations.html"
   - title: 시작하십시오
     entries:
-    - title: Cloud Sync에 대해 자세히 알아보십시오
+    - title: BlueXP 복사 및 동기화에 대해 자세히 알아보십시오
       url: "/concept-cloud-sync.html"
     - title: 빠른 시작
       url: "/task-quick-start.html"
@@ -42,7 +42,7 @@ sidebar:
         url: "/task-installing-gcp.html"
       - title: Linux 호스트에 설치합니다
         url: "/task-installing-linux.html"
-  - title: Cloud Sync를 사용합니다
+  - title: BlueXP 복사 및 동기화를 사용합니다
     entries:
     - title: 소스와 타겟 간에 데이터를 동기화합니다
       entries:
@@ -86,13 +86,13 @@ homepage:
   tiles:
   - title: 시작하십시오
     links:
-    - title: Cloud Sync 개요
+    - title: BlueXP 복사 및 동기화 개요
       url: concept-cloud-sync.html
     - title: 빠른 시작
       url: task-quick-start.html
     - title: FAQ 를 참조하십시오
       url: faq.html
-  - title: Cloud Sync를 사용합니다
+  - title: BlueXP 복사 및 동기화를 사용합니다
     links:
     - title: 동기화 관계를 생성합니다
       url: task-creating-relationships.html

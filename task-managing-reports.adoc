@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-reports.html 
-keywords: reports, sync reports, cloud sync reports, report errors, path reports 
+keywords: reports, sync reports, BlueXP copy and sync reports, report errors, path reports 
 summary: NetApp 직원의 도움을 받아 데이터 브로커 구성을 조정하고 성능을 개선하는 데 사용할 수 있는 정보를 얻을 수 있는 보고서를 만들고 볼 수 있습니다. 
 ---
 = 구성을 조정하기 위해 보고서 작성 및 보기
@@ -25,7 +25,7 @@ NetApp 직원의 도움을 받아 데이터 브로커 구성을 조정하고 성
 
 == 보고서 작성
 
-보고서를 만들 때마다 Cloud Sync는 경로를 검색한 다음 세부 정보를 보고서로 컴파일합니다.
+보고서를 만들 때마다 BlueXP 복사 및 동기화는 경로를 검색한 다음 세부 정보를 보고서로 컴파일합니다.
 
 .단계
 . 동기화 > 보고서 * 를 클릭합니다.
@@ -67,9 +67,9 @@ image:screenshot-sync-download-report.png["보고서에서 작업 메뉴를 클�
 
 == 보고서 오류를 보는 중입니다
 
-경로 테이블은 가장 최근 보고서에 오류가 있는지 여부를 식별합니다. 오류는 Cloud Sync가 경로를 스캔할 때 발생한 문제를 나타냅니다.
+경로 테이블은 가장 최근 보고서에 오류가 있는지 여부를 식별합니다. 오류를 통해 경로를 스캔할 때 BlueXP 복사 및 동기화가 발생하는 문제를 확인할 수 있습니다.
 
-예를 들어 보고서에 권한 거부 오류가 있을 수 있습니다. 이 유형의 오류는 Cloud Sync가 전체 파일 및 디렉토리 세트를 스캔하는 기능에 영향을 미칠 수 있습니다.
+예를 들어 보고서에 권한 거부 오류가 있을 수 있습니다. 이러한 유형의 오류는 BlueXP 복사 및 동기화의 전체 파일 및 디렉토리 스캔 기능에 영향을 줄 수 있습니다.
 
 오류 목록을 확인한 후 문제를 해결하고 보고서를 다시 실행할 수 있습니다.
 
