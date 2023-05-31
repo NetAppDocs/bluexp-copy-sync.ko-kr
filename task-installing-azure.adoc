@@ -132,7 +132,7 @@ BlueXP 복사 및 동기화가 Azure에 데이터 브로커를 배포할 때 필
 
 
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
 
 
 

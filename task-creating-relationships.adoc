@@ -33,13 +33,13 @@ summary: 동기화 관계를 생성하면 BlueXP 복사 및 동기화 서비스�
 .단계
 . 작업 환경을 만들거나 검색합니다.
 +
-** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["ONTAP 작업 환경을 위한 Amazon FSx를 생성합니다"^]
-** https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Azure NetApp Files 설정 및 검색"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 실행"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP 실행"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["기존 Cloud Volumes ONTAP 시스템 추가"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["ONTAP 클러스터 검색"^]
+** https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html["ONTAP 작업 환경을 위한 Amazon FSx를 생성합니다"^]
+** https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["Azure NetApp Files 설정 및 검색"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 실행"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP 실행"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["기존 Cloud Volumes ONTAP 시스템 추가"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["ONTAP 클러스터 검색"^]
 
 
 . Canvas * 를 클릭합니다.
@@ -215,4 +215,4 @@ Cloud Data Sense에서 데이터 동기화를 시작한 후에는 모든 소스 
 
 image:screenshot-sync-data-sense.png["클라우드 데이터 센스에서 직접 새 동기화를 시작한 후 나타나는 데이터 감지 통합 페이지를 보여주는 스크린샷."]
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["클라우드 데이터 센스에서 동기식 관계를 시작하는 방법을 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["클라우드 데이터 센스에서 동기식 관계를 시작하는 방법을 알아보십시오"^].

@@ -26,7 +26,7 @@ BlueXP 복사 및 동기화의 새로운 기능에 대해 알아보십시오.
 
 이제 사용자는 보안되지 않은 NFS와 NFS 간의 관계를 동기화하는 하드 링크를 포함할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["파일 형식 설정에 대해 자세히 알아보세요"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["파일 형식 설정에 대해 자세히 알아보세요"].
 
 
 
@@ -40,7 +40,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 이제 사용자는 예약된 동기화 전 최대 365일 전에 수정된 파일을 제외할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["최근에 수정한 파일 설정에 대해 자세히 알아보세요"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["최근에 수정한 파일 설정에 대해 자세히 알아보세요"].
 
 
 
@@ -48,9 +48,9 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 RESTful API를 사용하는 사용자는 관계 ID를 사용하여 관계를 필터링할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/api-sync.html["BlueXP 복사 및 동기화와 함께 RESTful API를 사용하는 방법에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html["BlueXP 복사 및 동기화와 함께 RESTful API를 사용하는 방법에 대해 자세히 알아보십시오"].
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["디렉터리 제외 설정에 대해 자세히 알아보세요"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["디렉터리 제외 설정에 대해 자세히 알아보세요"].
 
 
 
@@ -68,7 +68,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 * 사내 ONTAP
 
 
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["지원되는 동기화 관계에 대해 자세히 알아보십시오"].
 
 
 
@@ -76,7 +76,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationshi
 
 이름을 기준으로 디렉토리를 필터링하는 것 외에도 전체 경로를 기준으로 디렉토리를 필터링할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["디렉터리 제외 설정에 대해 자세히 알아보세요"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["디렉터리 제외 설정에 대해 자세히 알아보세요"].
 
 
 
@@ -88,7 +88,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 이제 계정에서 KMS 키를 사용하여 AWS 데이터 브로커 볼륨을 암호화할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#creating-the-data-broker["AWS에서 데이터 브로커 생성에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["AWS에서 데이터 브로커 생성에 대해 자세히 알아보십시오"].
 
 
 
@@ -113,7 +113,7 @@ Cloud Sync은 이제 ONTAP S3 스토리지 및 NFS에 대한 추가 동기화 �
 * IBM 클라우드 오브젝트 스토리지
 
 
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["지원되는 동기화 관계에 대해 자세히 알아보십시오"].
 
 
 
@@ -121,7 +121,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationshi
 
 AWS 데이터 브로커용 운영 체제가 Amazon Linux 2022로 업그레이드되었습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#details-about-the-data-broker-instance["AWS의 데이터 브로커 인스턴스에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#details-about-the-data-broker-instance["AWS의 데이터 브로커 인스턴스에 대해 자세히 알아보십시오"].
 
 
 
@@ -133,7 +133,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#detail
 
 이제 사용자가 UI에서 각 데이터 브로커의 로컬 구성을 볼 수 있는 * 구성 표시 * 옵션이 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html["데이터 브로커 그룹 관리에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html["데이터 브로커 그룹 관리에 대해 자세히 알아보십시오"].
 
 
 
@@ -141,9 +141,9 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html
 
 Azure 및 Google Cloud의 데이터 브로커용 운영 체제가 Rocky Linux 9.0으로 업그레이드되었습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-azure.html#details-about-the-data-broker-vm["Azure의 데이터 브로커 인스턴스에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#details-about-the-data-broker-vm["Azure의 데이터 브로커 인스턴스에 대해 자세히 알아보십시오"].
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-gcp.html#details-about-the-data-broker-vm-instance["Google Cloud의 데이터 브로커 인스턴스에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#details-about-the-data-broker-vm-instance["Google Cloud의 데이터 브로커 인스턴스에 대해 자세히 알아보십시오"].
 
 
 
@@ -155,7 +155,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-gcp.html#detail
 
 이제 새 * 디렉터리 이름 제외 * 설정을 동기화 관계에 사용할 수 있습니다. 사용자는 동기화에서 최대 15개의 디렉터리 이름을 필터링할 수 있습니다. copy-offload, .snapshot, ~snapshot 디렉토리는 기본적으로 제외됩니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["디렉터리 이름 제외 설정에 대해 자세히 알아보세요"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["디렉터리 이름 제외 설정에 대해 자세히 알아보세요"].
 
 
 
@@ -167,7 +167,7 @@ Cloud Sync은 이제 AWS S3 및 ONTAP S3 스토리지를 위한 추가 동기화
 * ONTAP S3 스토리지를 AWS S3로 설정합니다
 
 
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["지원되는 동기화 관계에 대해 자세히 알아보십시오"].
 
 
 
@@ -197,7 +197,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationshi
 'Microsoft.EventGrid/eventSubscriptions/write',
 'Microsoft.Storage/storageAccounts/write'
 ----
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
 
 
 
@@ -215,7 +215,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 * Google Drive를 포함하는 동기화 관계에 대한 보고서를 생성할 수도 있습니다.
 +
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html["보고서에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-reports.html["보고서에 대해 자세히 알아보십시오"].
 
 
 
@@ -229,7 +229,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html["보
 * Google Cloud Storage를 NFS 서버로 전송합니다
 
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
 
 
 
@@ -239,7 +239,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 이메일로 알림을 받으려면 동기화 관계에서 * 알림 * 설정을 활성화한 다음 BlueXP에서 알림 및 알림 설정을 구성해야 합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#setting-up-notifications["알림을 설정하는 방법에 대해 알아봅니다"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#setting-up-notifications["알림을 설정하는 방법에 대해 알아봅니다"].
 
 
 
@@ -251,9 +251,9 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.htm
 
 이제 NFS 서버 또는 SMB 서버의 데이터를 Google Drive로 동기화할 수 있습니다. "내 드라이브"와 "공유 드라이브"가 모두 대상으로 지원됩니다.
 
-Google Drive를 포함하는 동기화 관계를 생성하려면 필요한 권한과 개인 키가 있는 서비스 계정을 설정해야 합니다. https://docs.netapp.com/us-en/cloud-manager-sync/reference-requirements.html#google-drive["Google Drive 요구 사항에 대해 자세히 알아보십시오"].
+Google Drive를 포함하는 동기화 관계를 생성하려면 필요한 권한과 개인 키가 있는 서비스 계정을 설정해야 합니다. https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-drive["Google Drive 요구 사항에 대해 자세히 알아보십시오"].
 
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계 목록을 봅니다"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["지원되는 동기화 관계 목록을 봅니다"].
 
 
 
@@ -266,7 +266,7 @@ Cloud Sync는 이제 Azure Data Lake Storage Gen2에 대한 추가 동기화 관
 * StorageGRID에서 Azure Data Lake Storage Gen2로
 
 
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계 목록을 봅니다"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["지원되는 동기화 관계 목록을 봅니다"].
 
 
 
@@ -280,7 +280,7 @@ BlueXP의 Canvas에서 직접 동기화 관계를 설정하는 추가 방법이 
 
 이제 한 작업 환경을 다른 작업 환경 위로 끌어다 놓아 Canvas에서 동기화 관계를 설정할 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["BlueXP의 알림 센터를 보여 주는 스크린샷."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-enable-drag-and-drop.png["BlueXP의 알림 센터를 보여 주는 스크린샷."]
 
 
 
@@ -288,7 +288,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 
 이제 Canvas에서 작업 환경을 선택한 다음 오른쪽 패널에서 동기화 옵션을 선택하여 Azure Blob 저장소 또는 Google Cloud Storage에 대한 동기화 관계를 설정할 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["BlueXP의 알림 센터를 보여 주는 스크린샷."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-enable-panel.png["BlueXP의 알림 센터를 보여 주는 스크린샷."]
 
 
 
@@ -302,7 +302,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 
 Azure Data Lake를 포함하는 동기화 관계를 생성할 때 Cloud Sync에 스토리지 계정 연결 문자열을 제공해야 합니다. SAS(공유 액세스 서명)가 아니라 일반 연결 문자열이어야 합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["지원되는 동기화 관계 목록을 봅니다"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["지원되는 동기화 관계 목록을 봅니다"].
 
 
 
@@ -327,7 +327,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationshi
 - pubsub.topics.setIamPolicy
 - storage.buckets.update
 ----
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
 
 
 
@@ -369,7 +369,7 @@ Google Cloud의 데이터 브로커에 대한 기본 시스템 유형은 이제 
 ----
 이러한 사용 권한은 사용자가 만든 새 데이터 브로커에 자동으로 추가됩니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["연속 동기화 설정에 대해 자세히 알아보십시오"].
 
 
 
@@ -401,7 +401,7 @@ Azure Blob이 타겟인 동기화 관계를 만들면 Cloud Sync에서 이제 Az
 
 이제 동기화 관계에 새로운 * 동기화 시간 초과 * 설정을 사용할 수 있습니다. 이 설정을 사용하면 지정된 시간 또는 일 수 동안 동기화가 완료되지 않은 경우 Cloud Sync에서 데이터 동기화를 취소할지 여부를 정의할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"].
 
 
 
@@ -409,9 +409,9 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.htm
 
 이제 새 * 알림 * 설정을 동기화 관계에 사용할 수 있습니다. 이 설정을 사용하면 BlueXP 알림 센터에서 Cloud Sync 알림을 수신할지 여부를 선택할 수 있습니다. 성공적인 데이터 동기화, 실패한 데이터 동기화 및 취소된 데이터 동기화를 위한 알림을 활성화할 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png["BlueXP의 알림 센터를 보여 주는 스크린샷."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-notification-center.png["BlueXP의 알림 센터를 보여 주는 스크린샷."]
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"].
 
 
 
@@ -428,7 +428,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.htm
 * 마지막으로 데이터 브로커 그룹을 삭제할 수도 있습니다.
 
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html["데이터 브로커 그룹을 관리하는 방법에 대해 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html["데이터 브로커 그룹을 관리하는 방법에 대해 알아보십시오"].
 
 
 
@@ -436,7 +436,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html
 
 이제 동기화 대시보드의 내용을 필터링하여 특정 상태와 일치하는 동기화 관계를 보다 쉽게 찾을 수 있습니다. 예를 들어 실패 상태인 동기화 관계를 필터링할 수 있습니다
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-filter.png["대시보드 위쪽에 동기화 상태별 필터링 옵션이 표시된 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-sync-filter.png["대시보드 위쪽에 동기화 상태별 필터링 옵션이 표시된 스크린샷"]
 
 
 
@@ -448,7 +448,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 
 이제 동기화 관계 이름을 기준으로 대시보드를 정렬합니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-sort.png["대시보드에서 사용할 수 있는 이름별 정렬 옵션을 보여 주는 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-sync-sort.png["대시보드에서 사용할 수 있는 이름별 정렬 옵션을 보여 주는 스크린샷"]
 
 
 
@@ -456,7 +456,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 
 이전 릴리즈에서는 클라우드 데이터 센스와 Cloud Sync의 통합을 소개했습니다. 이 업데이트를 통해 동기화 관계를 보다 쉽게 만들 수 있도록 통합을 개선했습니다. Cloud Data Sense에서 데이터 동기화를 시작한 후에는 모든 소스 정보가 한 번에 포함되고 몇 가지 키 세부 정보만 입력하면 됩니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-data-sense.png["클라우드 데이터 센스에서 직접 새 동기화를 시작한 후 나타나는 데이터 감지 통합 페이지를 보여주는 스크린샷."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-sync-data-sense.png["클라우드 데이터 센스에서 직접 새 동기화를 시작한 후 나타나는 데이터 감지 통합 페이지를 보여주는 스크린샷."]
 
 
 
@@ -470,11 +470,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 
 예를 들어, 새 동기화 관계를 생성할 때 특정 데이터 브로커가 아닌 관계에 사용할 데이터 브로커_group_을 선택합니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-select-data-broker-group.png["데이터 브로커 그룹 선택을 보여 주는 동기화 관계 마법사 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-sync-select-data-broker-group.png["데이터 브로커 그룹 선택을 보여 주는 동기화 관계 마법사 스크린샷"]
 
 데이터 브로커 * 관리 탭에는 데이터 브로커 그룹이 관리하는 동기화 관계의 수도 표시됩니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-group-relationships.png["데이터 브로커 그룹을 보여 주는 데이터 브로커 관리 페이지의 스크린 샷. 이 페이지에는 관리 관계의 수를 비롯하여 해당 그룹에 대한 세부 정보가 표시됩니다."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-sync-group-relationships.png["데이터 브로커 그룹을 보여 주는 데이터 브로커 관리 페이지의 스크린 샷. 이 페이지에는 관리 관계의 수를 비롯하여 해당 그룹에 대한 세부 정보가 표시됩니다."]
 
 
 
@@ -482,7 +482,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 
 이제 보고서의 PDF를 다운로드할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html["보고서에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-reports.html["보고서에 대해 자세히 알아보십시오"].
 
 
 
@@ -641,7 +641,7 @@ link:api-sync.html["API를 사용하여 동기화 관계를 설정하는 방법�
 
 이제 Amazon FSx for ONTAP 파일 시스템과 데이터를 동기화할 수 있습니다.
 
-* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["ONTAP용 Amazon FSx에 대해 자세히 알아보십시오"^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["ONTAP용 Amazon FSx에 대해 자세히 알아보십시오"^]
 * link:reference-requirements.html["지원되는 동기화 관계를 봅니다"]
 * link:task-creating-relationships.html["ONTAP용 Amazon FSx에 대한 동기화 관계를 생성하는 방법을 알아보십시오"]
 
