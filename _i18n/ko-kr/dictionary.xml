@@ -1595,7 +1595,6 @@
   <block id="fafec3da88dda2aaace57da0275aa418" category="list-text">BlueXP 복사 및 동기화 API만 사용하여 이 소스/타겟과의 관계를 동기화할 수 있습니다.</block>
   <block id="9884de3e76b128738e9b044e854c59b2" category="summary">동기화 관계를 생성하면 BlueXP 복사 및 동기화 서비스가 소스에서 타겟으로 파일을 복사합니다. 초기 복사 후, 서비스는 24시간마다 변경된 데이터를 동기화합니다.</block>
   <block id="17a22599667444c8ead2e620d24daa16" category="paragraph">BlueXP 복사 및 동기화가 내보내기를 검색할 수 없는 경우 * 내보내기 수동 추가 * 를 클릭하고 NFS 내보내기 이름을 입력합니다.</block>
-  <block id="5cd54d605c54fc35f035298798014895" category="list-text">지정된 시간 또는 일 수 동안 동기화가 완료되지 않은 경우 BlueXP 복사 및 동기화가 데이터 동기화를 취소할지 여부를 정의합니다.</block>
   <block id="bd171db960b7fb2897e98bf00be4815f" category="list-text">BlueXP의 알림 센터에서 BlueXP 복사 및 동기화 알림 수신 여부를 선택할 수 있습니다. 성공적인 데이터 동기화, 실패한 데이터 동기화 및 취소된 데이터 동기화를 위한 알림을 활성화할 수 있습니다.</block>
   <block id="667141ecdc736f3d7ccf9a5f6e74cc7b" category="list-text">파일을 건너뛰기 전에 BlueXP 복사 및 동기화가 다시 시도해야 하는 횟수를 정의합니다.</block>
   <block id="c7153d054eed1ef19444b255974772ee" category="list-text">초기 데이터 동기화 후 BlueXP 복사 및 동기화는 소스 S3 버킷 또는 Google Cloud Storage 버킷의 변경 사항을 수신 대기시키고 변경 사항이 발생할 때마다 타겟에 대한 변경 사항을 지속적으로 동기화합니다. 예약된 간격으로 소스를 다시 검색할 필요가 없습니다.</block>
@@ -1817,4 +1816,16 @@
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAP 소프트웨어를 최신 릴리즈로 업그레이드하는 중입니다</block>
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">NSS 자격 증명을 BlueXP 계정과 연결하는 것은 BlueXP 사용자 로그인과 연결된 NSS 계정과 다릅니다.</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">이러한 NSS 자격 증명은 특정 BlueXP 계정 ID와 연결됩니다. BlueXP 계정에 속한 사용자는 * 지원 &gt; NSS 관리 * 에서 이러한 자격 증명에 액세스할 수 있습니다.</block>
+  <block id="860b2fc9627ec3a5cc3396995584e75b" category="list-text">지정된 분, 시간 또는 일 수 동안 동기화가 완료되지 않은 경우 BlueXP 복사 및 동기화가 데이터 동기화를 취소할지 여부를 정의합니다.</block>
+  <block id="26d399293c97f500657ad4983fd0d9fa" category="list-text">지정된 분, 시간 또는 일 수 동안 동기화가 완료되지 않은 경우 BlueXP 복사 및 동기화가 데이터 동기화를 취소할지 여부를 정의합니다.</block>
+  <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">2023년 6월 11일</block>
+  <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">분 단위로 자동 중단을 지원합니다</block>
+  <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">아직 완료되지 않은 활성 동기화는 이제 * 동기화 시간 초과 * 기능을 사용하여 15분 후에 중단할 수 있습니다.</block>
+  <block id="44856e8753e0c19c0341499a434c7c97" category="inline-link">동기화 시간 초과 설정에 대해 자세히 알아보십시오</block>
+  <block id="3266d16b8714caecb4f4231dca5dae65" category="paragraph"><block ref="bfd432c58dd0bb0c71b937c5a3336867" category="inline-link-rx"></block>.</block>
+  <block id="69540ae9a9da395711f1e900d88e4cc5" category="section-title">복사 액세스 시간 메타데이터</block>
+  <block id="a706d4045e92e504f4aa9e79191d81f5" category="paragraph">파일 시스템을 포함한 관계에서 * Copy for Objects * 기능은 이제 액세스 시간 메타데이터를 복사합니다.</block>
+  <block id="bac04a3b125486e43e5adcb9275b0cb7" category="inline-link">개체에 대한 복사 설정에 대해 자세히 알아보세요</block>
+  <block id="b9101f79b22863de2373d338b3f2fd49" category="paragraph"><block ref="61cd45fc857d1053eae8b58e970eda27" category="inline-link-rx"></block>.</block>
+  <block id="b9a11b90960ff803269429887ab4cff3" category="admonition">사용자는 로컬 사용자여야 합니다. 도메인 사용자는 지원되지 않습니다.</block>
 </blocks>
