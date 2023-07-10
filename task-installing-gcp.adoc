@@ -163,6 +163,7 @@ Google Cloud에 데이터 브로커를 구축하고 새로운 동기화 관계�
 
 BlueXP 복사 및 동기화는 다음 구성을 사용하여 Google Cloud에서 데이터 브로커를 생성합니다.
 
+Node.js 호환성:: V20
 기계 유형:: N2-표준-4
 vCPU:: 4
 RAM:: 15GB

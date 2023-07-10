@@ -18,6 +18,32 @@ BlueXP 복사 및 동기화의 새로운 기능에 대해 알아보십시오.
 
 
 
+== 2023년 7월 9일
+
+
+
+=== 한 번에 여러 동기화 관계를 제거합니다
+
+이제 사용자는 UI에서 한 번에 둘 이상의 동기화 관계를 삭제할 수 있습니다.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#deleting-relationships["동기화 재지정 을 삭제하는 방법에 대해 자세히 알아보십시오."]
+
+
+
+=== ACL만 복사합니다
+
+사용자는 이제 CIF 및 NFS 관계에서 ACL 정보를 복사하기 위한 추가 옵션을 사용할 수 있습니다. 동기화 관계를 생성하거나 관리할 때 파일만 복사하거나 ACL 정보만 복사하거나 파일과 ACL 정보를 복사할 수 있습니다.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-copying-acls.html["ACL 복제에 대해 자세히 알아보십시오."]
+
+
+
+=== Node.js 20으로 업데이트
+
+복사 및 동기화가 Node.js 20으로 업데이트되었습니다. 사용 가능한 모든 데이터 브로커가 업데이트됩니다. 이 업데이트와 호환되지 않는 운영 체제는 설치할 수 없으며 호환되지 않는 기존 시스템에 성능 문제가 발생할 수 있습니다.
+
+
+
 == 2023년 6월 11일
 
 
