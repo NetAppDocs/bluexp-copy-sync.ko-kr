@@ -62,7 +62,7 @@ BlueXP 복사 및 동기화는 동기화 관계를 생성할 때 설치 프로�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] 첫 번째 동기화 관계를 생성합니다
 [role="quick-margin-para"]
-에 로그인합니다 https://console.bluexp.netapp.com/["BlueXP"^]를 클릭하고 * 동기화 * 를 클릭한 다음 선택한 소스 및 대상을 끌어서 놓습니다. 화면의 지시에 따라 설치를 완료합니다. link:task-creating-relationships.html["자세한 정보"].
+에 로그인합니다 https://console.bluexp.netapp.com/["BlueXP"^]에서 * 동기화 * 를 선택한 다음 선택한 소스 및 대상을 끌어서 놓습니다. 화면의 지시에 따라 설치를 완료합니다. link:task-creating-relationships.html["자세한 정보"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] 무료 평가판이 종료된 후 동기화 관계에 대한 비용을 지불하십시오
 [role="quick-margin-para"]

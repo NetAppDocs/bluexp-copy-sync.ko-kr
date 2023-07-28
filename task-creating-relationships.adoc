@@ -42,7 +42,7 @@ summary: 동기화 관계를 생성하면 BlueXP 복사 및 동기화 서비스�
 ** https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["ONTAP 클러스터 검색"^]
 
 
-. Canvas * 를 클릭합니다.
+. Canvas * 를 선택합니다.
 . 위에 나열된 유형과 일치하는 작업 환경을 선택합니다.
 . 동기화 옆에 있는 작업 메뉴를 선택합니다.
 +
@@ -57,7 +57,7 @@ image:screenshot_sync_we.gif["작업 환경을 선택한 후 동기화 메뉴에
 
 다음 단계를 수행하여 ONTAP, Azure NetApp Files, Cloud Volumes ONTAP 또는 온프레미스 ONTAP 클러스터에 대해 Amazon FSx 이외의 지원되는 스토리지 유형과 데이터를 동기화할 수 있습니다. 아래 단계에서는 NFS 서버에서 S3 버킷으로 동기화 관계를 설정하는 방법을 보여 주는 예를 제공합니다.
 
-. BlueXP에서 * 동기화 * 를 클릭합니다.
+. BlueXP에서 * 동기화 * 를 선택합니다.
 . 동기화 관계 정의 * 페이지에서 소스 및 대상을 선택합니다.
 +
 다음 단계에서는 NFS 서버에서 S3 버킷으로 동기화 관계를 생성하는 방법의 예를 제공합니다.
@@ -77,13 +77,13 @@ image:screenshot_nfs_to_s3.png["NFS를 소스로, S3를 새로운 동기화 관�
 ** link:task-installing-linux.html["Linux 호스트에 데이터 브로커 설치"]
 
 
-. 데이터 브로커를 설치한 후 * 계속 * 을 클릭합니다.
+. 데이터 브로커를 설치한 후 * 계속 * 을 선택합니다.
 +
 image:screenshot-data-broker-group.png["이 스크린샷은 성공적으로 배포된 인스턴스를 보여 줍니다. 인터페이스에는 AWS 네트워킹을 포함한 인스턴스에 대한 세부 정보가 표시됩니다."]
 
 . [[FILTER](* 디렉터리*) 페이지에서 최상위 디렉터리나 하위 디렉터리를 선택합니다.
 +
-BlueXP 복사 및 동기화가 내보내기를 검색할 수 없는 경우 * 내보내기 수동 추가 * 를 클릭하고 NFS 내보내기 이름을 입력합니다.
+BlueXP 복사 및 동기화가 내보내기를 검색할 수 없는 경우 * 내보내기 수동 추가 * 를 선택하고 NFS 내보내기 이름을 입력합니다.
 
 +
 
@@ -92,7 +92,7 @@ NOTE: NFS 서버에 둘 이상의 디렉토리를 동기화하려는 경우 작�
 . AWS S3 버킷 * 페이지에서 버킷을 선택합니다.
 +
 ** 드릴다운하여 버킷 내의 기존 폴더를 선택하거나 버킷 내에서 생성한 새 폴더를 선택합니다.
-** 목록에 추가 * 를 클릭하여 AWS 계정과 연결되지 않은 S3 버킷을 선택합니다. link:reference-requirements.html#s3["S3 버킷에 특정 권한을 적용해야 합니다"].
+** 목록에 추가 * 를 선택하여 AWS 계정과 연결되지 않은 S3 버킷을 선택합니다. link:reference-requirements.html#s3["S3 버킷에 특정 권한을 적용해야 합니다"].
 
 
 . Bucket 설정 * 페이지에서 Bucket을 설정합니다.
@@ -198,7 +198,7 @@ image:screenshot_relationship_tags.png["Amazon S3에 대한 동기화 관계를 
 
 TIP: StorageGRID 및 IBM 클라우드 오브젝트 스토리지로 데이터를 동기화할 때도 동일한 기능을 사용할 수 있습니다. Azure 및 Google Cloud Storage의 경우 메타데이터 옵션만 사용할 수 있습니다.
 
-. 동기화 관계에 대한 세부 정보를 검토한 다음 * 관계 생성 * 을 클릭합니다.
+. 동기화 관계에 대한 세부 정보를 검토한 다음 * 관계 생성 * 을 선택합니다.
 
 
 결과 *
@@ -207,12 +207,12 @@ BlueXP 복사 및 동기화는 소스와 대상 간의 데이터 동기화를 �
 
 
 
-== 클라우드 데이터 센스에서 동기화 관계를 생성합니다
+== BlueXP 분류에서 동기화 관계를 생성합니다
 
-BlueXP 복사 및 동기화는 클라우드 데이터 센스와 통합되어 있습니다. Data Sense 내에서 BlueXP 복사 및 동기화를 사용하여 대상 위치에 동기화할 소스 파일을 선택할 수 있습니다.
+BlueXP 복사 및 동기화는 BlueXP 분류와 통합되어 있습니다. BlueXP 분류 내에서 BlueXP 복사 및 동기화를 사용하여 대상 위치에 동기화할 소스 파일을 선택할 수 있습니다.
 
-Cloud Data Sense에서 데이터 동기화를 시작한 후에는 모든 소스 정보가 한 번에 포함되고 몇 가지 키 세부 정보만 입력하면 됩니다. 그런 다음 새 동기화 관계의 타겟 위치를 선택합니다.
+BlueXP 분류에서 데이터 동기화를 시작하면 모든 소스 정보가 한 번에 포함되고 몇 가지 키 세부 정보만 입력하면 됩니다. 그런 다음 새 동기화 관계의 타겟 위치를 선택합니다.
 
-image:screenshot-sync-data-sense.png["클라우드 데이터 센스에서 직접 새 동기화를 시작한 후 나타나는 데이터 감지 통합 페이지를 보여주는 스크린샷."]
+image:screenshot-sync-data-sense.png["BlueXP 분류에서 직접 새 동기화를 시작한 후 나타나는 BlueXP 분류 통합 페이지를 보여주는 스크린샷."]
 
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["클라우드 데이터 센스에서 동기식 관계를 시작하는 방법을 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["BlueXP 분류에서 동기화 관계를 시작하는 방법에 대해 알아봅니다"^].

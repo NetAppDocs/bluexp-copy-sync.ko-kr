@@ -106,7 +106,7 @@ NetApp 데이터 브로커는 포트 443을 통한 아웃바운드 인터넷 액
 | https://sts.amazonaws.com 으로 문의하십시오 | 데이터 브로커가 AWS에 구축되거나 사내 구축 시에 AWS 자격 증명이 제공되고 AWS 자격 증명이 제공됩니다. 데이터 브로커가 배포, 업데이트 및 재시작 중에 이 엔드포인트에 연결합니다. 
 
 
-| https://console.bluexp.netapp.com/ \https://netapp-cloud-account.auth0.com 으로 문의하십시오 | 데이터 센스를 사용하여 새 동기화 관계를 위한 소스 파일을 선택할 때 클라우드 데이터 센스에 문의하려면 
+| https://console.bluexp.netapp.com/ \https://netapp-cloud-account.auth0.com 으로 문의하십시오 | 분류를 사용하여 새 동기화 관계를 위한 소스 파일을 선택할 때 BlueXP 분류에 문의하려면 다음을 수행합니다. 
 
 
 | https://pubsub.googleapis.com 으로 문의하십시오 | Google 저장소 계정에서 연속 동기화 관계를 생성하는 경우 
