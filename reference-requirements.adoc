@@ -220,6 +220,14 @@ Google Cloud Storage를 포함한 동기화 관계에는 Google Cloud 또는 사
 
 
 
+=== Google Cloud 버킷 암호화
+
+고객이 관리하는 KMS 키 또는 기본 Google 관리형 키를 사용하여 타겟 Google Cloud 버킷을 암호화할 수 있습니다. 버킷에 이미 KMS 암호화가 추가된 경우 기본 Google 관리 암호화가 무시됩니다.
+
+고객 관리형 KMS 키를 추가하려면 와 함께 데이터 브로커를 사용해야 합니다 https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-for-the-service-account["권한을 수정합니다"], 및 키는 버킷과 같은 지역에 있어야 합니다.
+
+
+
 == Google 드라이브
 
 Google Drive가 포함된 동기화 관계를 설정할 때 다음을 제공해야 합니다.
