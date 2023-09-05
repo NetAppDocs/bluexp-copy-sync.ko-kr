@@ -167,7 +167,6 @@
   <block id="1c3e0d66ceb2ba1955fa5d6c931788cd" category="list-text">파일이 소스에서 삭제된 경우 대상 위치에서 파일을 삭제하도록 선택합니다. 기본값은 대상 위치에서 파일을 삭제하지 않는 것입니다.</block>
   <block id="f12b42eece54a56ffab836a42eb37488" category="list-text">파일 형식</block>
   <block id="ab02bb0c1a43b674af1de544e1af3831" category="list-text">파일 확장명 제외</block>
-  <block id="3ac7c94d925c145faa4e821d6da327ac" category="list-text">파일 확장명을 입력하고 * Enter * 를 눌러 동기화에서 제외할 파일 확장명을 지정합니다. 예를 들어, *.log 파일을 제외하려면 _log_또는 _.log_를 입력합니다. 여러 확장자에 대해 구분 기호가 필요하지 않습니다. 다음 비디오는 짧은 데모를 제공합니다.</block>
   <block id="a00fe904aecabd4bff74d8776e6da2c5" category="list-text">파일 크기</block>
   <block id="9c8cecb2075d9547b74e5e71bf16ab79" category="list-text">파일 크기나 특정 크기 범위에 있는 파일에 관계없이 모든 파일을 동기화하도록 선택합니다.</block>
   <block id="80ccccd39ce6134340fccbf76eb379ae" category="list-text">수정한 날짜</block>
@@ -764,7 +763,6 @@
   <block id="c825d05ceebe5978107395d2dffdbcff" category="cell">BYOL 라이센스를 사용하여 동기화 관계에 대한 NetApp 지원 팀에 문의</block>
   <block id="cabe1b04cc3c96ae849f8fd810dfecdb" category="cell">https://fedoraproject.org 으로 문의하십시오</block>
   <block id="ebd974875888e4cb1567f55e3466cda1" category="cell">설치 및 업데이트 중에 데이터 브로커 가상 머신에 7z를 설치하려면 다음을 수행합니다. 7z는 NetApp 기술 지원 팀에 AutoSupport 메시지 전송 기능이 필요합니다.</block>
-  <block id="6af6c652626660023ec712f6c15bbc0a" category="cell">https://sts.amazonaws.com 으로 문의하십시오</block>
   <block id="89100474e7faee0c34727c4b2b471007" category="cell">데이터 브로커가 AWS에 구축되거나 사내 구축 시에 AWS 자격 증명이 제공되고 AWS 자격 증명이 제공됩니다. 데이터 브로커가 배포, 업데이트 및 재시작 중에 이 엔드포인트에 연결합니다.</block>
   <block id="6a3cdc9a7bccf7b319d4cd575bb3b01f" category="section-title">웹 브라우저 끝점</block>
   <block id="fd0cb271f0ac093ecb033a2bfea34fbd" category="paragraph">문제 해결을 위해 로그를 다운로드하려면 웹 브라우저에서 다음 끝점에 액세스해야 합니다.</block>
@@ -1884,4 +1882,17 @@
   <block id="04a9fd8958892dd025a4cc8dbf674cd3" category="list-text">sudo pm2 모두 시작</block>
   <block id="536e5d919b8f1f2a0ce12ecc4d2a34c7" category="list-text">관련 외부 버킷과 연속 동기화 관계를 생성합니다.</block>
   <block id="e08fb6f08b7850e04ea43026fc6e9def" category="admonition">외부 버킷과의 연속 동기화 관계를 생성하는 데 사용되는 데이터 브로커는 프로젝트의 버킷과 또 다른 연속 동기화 관계를 생성할 수 없습니다.</block>
+  <block id="feb32d3372b2c412782aaf89f4c3468c" category="list-text">파일 확장자를 입력하고 * Enter * 를 눌러 동기화에서 제외할 regex 또는 파일 확장자를 지정합니다. 예를 들어, *.log 파일을 제외하려면 _log_또는 _.log_를 입력합니다. 여러 확장자에 대해 구분 기호가 필요하지 않습니다. 다음 비디오는 짧은 데모를 제공합니다.</block>
+  <block id="e8896d6ca3648d230a610f352be679de" category="admonition">정규식 또는 정규식은 와일드카드나 glob 식과 다릅니다. 이 기능은 * 만 * regex와 함께 사용할 수 있습니다.</block>
+  <block id="2869c1b7d6055fd39cb65435bce896fd" category="cell">\https://sts.amazonaws.com
+\https://sts.us-east-1.amazonaws.com</block>
+  <block id="3034670f33afeb69347c1f076680bc54" category="list-text">Continue * 를 선택합니다. 데이터 브로커에 S3 권한을 추가하려면 AWS 액세스 및 비밀 키를 입력합니다.</block>
+  <block id="18cf4605db6670514e116119da7de0a0" category="section-title">2023년 9월 3일</block>
+  <block id="84a4e9be01e1e0b2123f0992743bb3be" category="section-title">regex로 파일을 제외합니다</block>
+  <block id="8a2aa0d6caae0bb9fe34491d59f66a36" category="paragraph">이제 사용자는 regex를 사용하여 파일을 제외할 수 있습니다.</block>
+  <block id="1f3154fef8201e2bc88bd5111528535c" category="inline-link">파일 확장명 제외 * 기능에 대해 자세히 알아보십시오.</block>
+  <block id="8ca7330f80b3c6b405f94cdadf97a80c" category="paragraph"><block ref="8ca7330f80b3c6b405f94cdadf97a80c" category="inline-link-rx"></block></block>
+  <block id="f32e3be81b145c34740db00a44c46e93" category="section-title">Azure 데이터 브로커를 생성할 때 S3 키를 추가합니다</block>
+  <block id="7631c04fd88511e09fd26f0ce9f65ce1" category="paragraph">이제 Azure 데이터 브로커를 생성할 때 사용자가 AWS S3 액세스 키와 비밀 키를 추가할 수 있습니다.</block>
+  <block id="0aa08047034186671d34875b5617b057" category="paragraph"><block ref="0aa08047034186671d34875b5617b057" category="inline-link-rx"></block></block>
 </blocks>
