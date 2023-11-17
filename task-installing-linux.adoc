@@ -27,7 +27,7 @@ summary: 새 데이터 브로커를 생성할 때 사내 Linux 호스트 또는 
 +
 CentOS 스트림은 지원되지 않습니다.
 
-** Red Hat Enterprise Linux 8.0 및 8.5
+** Red Hat Enterprise Linux 8.0, 8.5 및 8.8
 ** 록키 리눅스 9
 ** Ubuntu 서버 20.04 LTS
 ** SUSE Linux Enterprise Server 15 SP1
