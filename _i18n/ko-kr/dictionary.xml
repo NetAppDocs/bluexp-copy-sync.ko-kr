@@ -1698,7 +1698,6 @@
   <block id="bac04a3b125486e43e5adcb9275b0cb7" category="inline-link">개체에 대한 복사 설정에 대해 자세히 알아보세요</block>
   <block id="b9101f79b22863de2373d338b3f2fd49" category="paragraph"><block ref="61cd45fc857d1053eae8b58e970eda27" category="inline-link-rx"></block>.</block>
   <block id="b9a11b90960ff803269429887ab4cff3" category="admonition">사용자는 로컬 사용자여야 합니다. 도메인 사용자는 지원되지 않습니다.</block>
-  <block id="c6d95123ce00e1d2940e9547ed9e800e" category="list-text">* Node.js 호환성 *:v20</block>
   <block id="029bf19b5ab4e2409feefba3e8d94200" category="section-title">BlueXP 복사 및 동기화를 설정하여 ACL을 복사합니다</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
   <block id="31bea9e85b096361bd5e056000e559fa" category="list-text">BlueXP 복사 및 동기화에서 * 새 동기화 생성 * 을 선택합니다.</block>
@@ -1711,7 +1710,6 @@
   <block id="7c2e6ea8a3aea68b51b8b85907eabea5" category="section-title">SMB 공유 간에 ACL을 수동으로 복사합니다</block>
   <block id="59e767a49496d7be5777e4cf48d4105c" category="list-text">관계를 만들 때 또는 관계를 만든 후에 설정을 활성화하여 SMB 서버에서 ACL만, 파일 전용 또는 ACL 및 파일을 복사합니다.</block>
   <block id="e0c7c4832f74beb01a9b0b7f4ceb62b9" category="list-text">Node.js 호환성</block>
-  <block id="8286e09aa759584d6fd8292ccdc241cc" category="list-text">V20</block>
   <block id="e0536b4ae9bb49a9633b77ce78d68e0a" category="section-title">동기화 성능을 가속화합니다</block>
   <block id="baf8ddab0e1f4d03b84d74129178e3e2" category="section-title">업데이트 가능성</block>
   <block id="11d4a32f12cfcb43ae53ae70017809c1" category="section-title">알림을 설정합니다</block>
@@ -1897,4 +1895,15 @@
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">클라우드 공급자의 파일 서비스, 자체 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 BlueXP 설명서에서 "도움말 얻기"를 참조하십시오.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXP 및 해당 스토리지 솔루션 및 서비스에 관한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.</block>
   <block id="78e61c832f461b7daf55a1dcd92749e0" category="list-text">Red Hat Enterprise Linux 8.0, 8.5 및 8.8</block>
+  <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">2023년 11월 26일</block>
+  <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Azure Blob을 위한 콜드 스토리지 클래스 지원</block>
+  <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">이제 동기화 관계를 생성할 때 콜드 스토리지 Azure Blob 계층을 사용할 수 있습니다.</block>
+  <block id="6e90305f3ad22c32d20c662a0bb06726" category="inline-link">동기화 관계 만들기에 대해 자세히 알아봅니다.</block>
+  <block id="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="paragraph"><block ref="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="inline-link-rx"></block></block>
+  <block id="e35f035cdd0e53d6ac8e57e89c9a3994" category="section-title">AWS 데이터 브로커에서 Tel Aviv 지역 지원</block>
+  <block id="bc601240bd77a257f82ad29245da02ee" category="paragraph">Tel Aviv는 이제 AWS에서 데이터 브로커를 생성할 때 지원되는 지역이 되었습니다.</block>
+  <block id="e24f754057dce2d0f9791240fec7d494" category="section-title">데이터 브로커용 노드 버전으로 업데이트</block>
+  <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">모든 새로운 데이터 브로커는 이제 노드 버전 21.2.0을 사용합니다. CentOS 7.0 및 Ubuntu Server 18.0과 같이 이 업데이트와 호환되지 않는 데이터 브로커는 더 이상 BlueXP 복사본 및 동기화를 수행할 수 없습니다.</block>
+  <block id="067302a61f4ac3cb10bab96cf4753092" category="list-text">v21.2.0</block>
+  <block id="3677e4449a81dc7f1c8db056eade76dd" category="list-text">* Node.js 호환성 *: v21.2.0</block>
 </blocks>

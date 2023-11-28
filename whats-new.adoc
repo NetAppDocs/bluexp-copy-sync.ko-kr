@@ -18,6 +18,32 @@ BlueXP 복사 및 동기화의 새로운 기능에 대해 알아보십시오.
 
 
 
+== 2023년 11월 26일
+
+
+
+=== Azure Blob을 위한 콜드 스토리지 클래스 지원
+
+이제 동기화 관계를 생성할 때 콜드 스토리지 Azure Blob 계층을 사용할 수 있습니다.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["동기화 관계 만들기에 대해 자세히 알아봅니다."]
+
+
+
+=== AWS 데이터 브로커에서 Tel Aviv 지역 지원
+
+Tel Aviv는 이제 AWS에서 데이터 브로커를 생성할 때 지원되는 지역이 되었습니다.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["AWS에서 데이터 브로커 생성에 대해 자세히 알아보십시오"].
+
+
+
+=== 데이터 브로커용 노드 버전으로 업데이트
+
+모든 새로운 데이터 브로커는 이제 노드 버전 21.2.0을 사용합니다. CentOS 7.0 및 Ubuntu Server 18.0과 같이 이 업데이트와 호환되지 않는 데이터 브로커는 더 이상 BlueXP 복사본 및 동기화를 수행할 수 없습니다.
+
+
+
 == 2023년 9월 3일
 
 
