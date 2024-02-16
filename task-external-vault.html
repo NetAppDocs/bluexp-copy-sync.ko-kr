@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head class="at-element-marker">
+  <title>외부 HashCorp Vault를 사용하도록 데이터 브로커 그룹을 설정합니다 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="외부 HashCorp Vault를 사용하도록 데이터 브로커 그룹을 설정합니다 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/bluexp-copy-sync/task-external-vault.html" />
+	<meta property="og:description" content="Amazon S3, Azure 또는 Google Cloud 자격 증명이 필요한 동기화 관계를 생성하는 경우 BlueXP 복사본 및 동기화 사용자 인터페이스 또는 API를 통해 이러한 자격 증명을 지정해야 합니다. 또는 데이터 브로커를 설정하여 외부 HashashCorp 볼트에서 직..." />
+  <meta property="og:image" content="https://docs.netapp.com/ko-kr/bluexp-copy-sync/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Amazon S3, Azure 또는 Google Cloud 자격 증명이 필요한 동기화 관계를 생성하는 경우 BlueXP 복사본 및 동기화 사용자 인터페이스 또는 API를 통해 이러한 자격 증명을 지정해야 합니다. 또는 데이터 브로커를 설정하여 외부 HashashCorp 볼트에서 직...">
+  <meta name="keywords" content=" hashicorp, vault, credentials, secrets, API"><!-- Icons -->
+  <link rel="icon" href="/ko-kr/bluexp-copy-sync/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ko-kr/bluexp-copy-sync/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/bluexp-copy-sync/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/ko-kr/bluexp-copy-sync/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ko-kr/bluexp-copy-sync/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/ko-kr/bluexp-copy-sync/task-external-vault.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-external-vault.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-copy-sync/task-external-vault.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-external-vault.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-copy-sync/task-external-vault.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-copy-sync/task-external-vault.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-copy-sync/task-external-vault.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-copy-sync/task-external-vault.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-copy-sync/task-external-vault.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-copy-sync/task-external-vault.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-copy-sync/task-external-vault.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ko-kr/bluexp-copy-sync/js/na-search.js'></script><script src='/ko-kr/bluexp-copy-sync/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/ko-kr/bluexp-copy-sync/js/custom-dropdown.js'></script>
+  <script src='/ko-kr/bluexp-copy-sync/js/FileSaver.min.js'></script>
+  <script src='/ko-kr/bluexp-copy-sync/js/jszip-utils.min.js'></script>
+  <script src='/ko-kr/bluexp-copy-sync/js/jszip.min.js'></script><script src='/ko-kr/bluexp-copy-sync/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/ko-kr/bluexp-copy-sync/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/kr">
+                <image id="ie-header-logo" src="/ko-kr/bluexp-copy-sync/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">문서</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/ko-kr/bluexp-copy-sync/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">한국어</span>
+                    <img src="/ko-kr/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ko-kr/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-copy-sync/task-external-vault.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-external-vault.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-copy-sync/task-external-vault.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-copy-sync/task-external-vault.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-copy-sync/task-external-vault.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-copy-sync/task-external-vault.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-copy-sync/task-external-vault.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-copy-sync/task-external-vault.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-copy-sync/task-external-vault.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/ko-kr/bluexp-copy-sync/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">모든 NetApp</span>
+                    <img src="/ko-kr/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ko-kr/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">지원</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">기술 자료</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/ko/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">교육</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/ko-kr/bluexp-copy-sync/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/ko-kr/bluexp-copy-sync/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">모든 문서</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">클라우드 문서</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/ko-kr/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/ko-kr/bluexp-copy-sync/">-->
+      BlueXP copy and sync
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/ko-kr/bluexp-copy-sync/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/ko-kr/bluexp-copy-sync/search.html" 
+        data-type="widget"
+        data-placeholder="설명서 검색"
+        data-no-results-found="{query}에 대한 결과를 찾을 수 없습니다"
+        data-did-you-mean="{suggestion}을(를) 검색하십시오."
+        data-no-results-found-did-you-mean="{query}에 대한 결과가 없습니다. {suggestion}을(를) 찾고 계시는 건가요?"
+        data-results-found="{hitCount}개의 결과를 찾았습니다"
+        data-error-message="오류가 발생했습니다. 다시 시도해 주십시오."
+        data-error-reset="검색 재설정"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP 문서 복사 및 동기화"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/bluexp-copy-sync/index.html">
+        BlueXP 문서 복사 및 동기화
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="릴리스 정보"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 릴리스 정보</div>-->
+         릴리스 정보
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="새로운 소식"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/whats-new.html">
+        새로운 소식
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="제한 사항"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/reference-limitations.html">
+        제한 사항
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시작하십시오"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시작하십시오</div>-->
+         시작하십시오
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP 복사 및 동기화에 대해 자세히 알아보십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/concept-cloud-sync.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/concept-cloud-sync.html">
+        BlueXP 복사 및 동기화에 대해 자세히 알아보십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="빠른 시작"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-quick-start.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/task-quick-start.html">
+        빠른 시작
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지원되는 동기화 관계를 봅니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/reference-supported-relationships.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/reference-supported-relationships.html">
+        지원되는 동기화 관계를 봅니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="소스와 타겟을 준비합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/reference-requirements.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/reference-requirements.html">
+        소스와 타겟을 준비합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="네트워킹을 준비합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/reference-networking.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/reference-networking.html">
+        네트워킹을 준비합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="데이터 브로커를 설치합니다"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 데이터 브로커를 설치합니다</div>-->
+         데이터 브로커를 설치합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS에 설치"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-installing-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-copy-sync/task-installing-aws.html">
+        AWS에 설치
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure에 설치합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-installing-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-copy-sync/task-installing-azure.html">
+        Azure에 설치합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud에 설치합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-installing-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-copy-sync/task-installing-gcp.html">
+        Google Cloud에 설치합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Linux 호스트에 설치합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-installing-linux.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-copy-sync/task-installing-linux.html">
+        Linux 호스트에 설치합니다
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP 복사 및 동기화를 사용합니다"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> BlueXP 복사 및 동기화를 사용합니다</div>-->
+         BlueXP 복사 및 동기화를 사용합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="소스와 타겟 간에 데이터를 동기화합니다"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 소스와 타겟 간에 데이터를 동기화합니다</div>-->
+         소스와 타겟 간에 데이터를 동기화합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="동기화 관계를 생성합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-creating-relationships.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-copy-sync/task-creating-relationships.html">
+        동기화 관계를 생성합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SMB 공유에서 ACL 복사"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-copying-acls.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-copy-sync/task-copying-acls.html">
+        SMB 공유에서 ACL 복사
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="사용 중인 NFS 데이터를 암호화합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-nfs-encryption.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-copy-sync/task-nfs-encryption.html">
+        사용 중인 NFS 데이터를 암호화합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="하시코프 자료실 비밀 사용"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-external-vault.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-copy-sync/task-external-vault.html">
+        하시코프 자료실 비밀 사용
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센스를 설정합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-licensing.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/task-licensing.html">
+        라이센스를 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="동기화 관계를 관리합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-managing-relationships.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/task-managing-relationships.html">
+        동기화 관계를 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="데이터 브로커 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-managing-data-brokers.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/task-managing-data-brokers.html">
+        데이터 브로커 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="보고서를 보고 구성을 조정합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-managing-reports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/task-managing-reports.html">
+        보고서를 보고 구성을 조정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="데이터 브로커를 제거합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-uninstalling.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/task-uninstalling.html">
+        데이터 브로커를 제거합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="REST API를 사용하여 자동화"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/api-sync.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/bluexp-copy-sync/api-sync.html">
+        REST API를 사용하여 자동화
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="개념"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 개념</div>-->
+         개념
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센싱"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/concept-licensing.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/concept-licensing.html">
+        라이센싱
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="데이터 개인 정보 보호"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/concept-privacy.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/concept-privacy.html">
+        데이터 개인 정보 보호
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="FAQ 를 참조하십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/faq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/faq.html">
+        FAQ 를 참조하십시오
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지식 및 지원"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-copy-sync/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-copy-sync/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 지식 및 지원</div>-->
+         지식 및 지원
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지원을 위해 등록하십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/task-support-registration.html">
+        지원을 위해 등록하십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="도움을 받으십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-copy-sync/task-get-help.html">
+        도움을 받으십시오
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="법적 고지"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-external-vault.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/bluexp-copy-sync/legal-notices.html">
+        법적 고지
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/ko-kr/bluexp-copy-sync"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/ko-kr/bluexp-copy-sync"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/ko-kr/bluexp-copy-sync/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 본 한국어 번역은 사용자 편의를 위해 제공되는 기계 번역입니다. 영어 버전과 한국어 버전이 서로 어긋나는 경우에는 언제나 영어 버전이 우선합니다. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">외부 HashCorp Vault를 사용하도록 데이터 브로커 그룹을 설정합니다</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-05-08 19:43:26 +0000">05/08/2023</time>
+        
+    
+    
+        <span>기여자
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/ko-kr/bluexp-copy-sync/images/discuss-sm.svg" alt="" class="github-icon" />변경 제안</span>
+        <img src="/ko-kr/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/ko-kr/bluexp-copy-sync/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-copy-sync.ko-kr/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ko-kr/bluexp-copy-sync/task-external-vault.html&page-title=외부 HashCorp Vault를 사용하도록 데이터 브로커 그룹을 설정합니다" class="page-nav-contribute-link" role="button">문서 변경사항 요청</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-copy-sync/blob/main/task-external-vault.adoc" class="page-nav-contribute-link" role="button">이 페이지 편집</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >기여하는 방법 알아보기</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/ko-kr/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/ko-kr/bluexp-copy-sync/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/ko-kr/bluexp-copy-sync/pdfs/fullsite-sidebar/BlueXP_복사_및_동기화_문서.pdf" >
+                    <img src="/ko-kr/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>이 문서 사이트의 PDF</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-copy-sync/pdfs/sidebar/릴리스_정보.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            릴리스 정보
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-copy-sync/pdfs/sidebar/시작하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시작하십시오
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-copy-sync/pdfs/sidebar/데이터_브로커를_설치합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            데이터 브로커를 설치합니다
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-copy-sync/pdfs/sidebar/BlueXP_복사_및_동기화를_사용합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            BlueXP 복사 및 동기화를 사용합니다
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-copy-sync/pdfs/sidebar/소스와_타겟_간에_데이터를_동기화합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            소스와 타겟 간에 데이터를 동기화합니다
+          </a>
+          
+
+
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-copy-sync/pdfs/sidebar/개념.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            개념
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-copy-sync/pdfs/sidebar/지식_및_지원.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-copy-sync/images/pdf-icon.png" alt="" width="16" height="16"/>
+            지식 및 지원
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/ko-kr/bluexp-copy-sync/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Amazon S3, Azure 또는 Google Cloud 자격 증명이 필요한 동기화 관계를 생성하는 경우 BlueXP 복사본 및 동기화 사용자 인터페이스 또는 API를 통해 이러한 자격 증명을 지정해야 합니다. 또는 데이터 브로커 그룹을 설정하여 외부 HashiCorp 볼트에서 직접 자격 증명(또는 <em>비밀</em>)에 액세스할 수도 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 기능은 Amazon S3, Azure 또는 Google Cloud 자격 증명이 필요한 동기화 관계가 있는 BlueXP 복사 및 동기화 API를 통해 지원됩니다.</p>
+</div>
+<div class="paragraph quick-margin-para">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png" alt="1개"></span> 볼트를 준비합니다</div>
+<p>URL을 설정하여 데이터 브로커 그룹에 자격 증명을 제공할 볼트를 준비합니다. 볼트의 비밀에 대한 URL은 _creds_로 끝나야 합니다.</p>
+</div>
+<div class="paragraph quick-margin-para">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png" alt="2개"></span> 데이터 브로커 그룹을 준비합니다</div>
+<p>그룹의 각 데이터 브로커에 대한 로컬 구성 파일을 수정하여 외부 볼트에서 자격 증명을 가져오도록 데이터 브로커 그룹을 준비합니다.</p>
+</div>
+<div class="paragraph quick-margin-para">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png" alt="세 가지"></span> API를 사용하여 동기화 관계를 생성합니다</div>
+<p>이제 모든 것이 설정되었으므로 API 호출을 전송하여 볼트를 사용하는 동기화 관계를 만들어 비밀을 가져올 수 있습니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="볼트-준비-중">볼트 준비 중</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP 복사본을 제공하고 URL과 볼트 내 비밀에 동기화해야 합니다. 이러한 URL을 설정하여 볼트를 준비합니다. 만들려는 동기화 관계의 각 소스 및 타겟의 자격 증명에 대한 URL을 설정해야 합니다.</p>
+</div>
+<div class="paragraph">
+<p>URL은 다음과 같이 설정해야 합니다.</p>
+</div>
+<div class="paragraph">
+<p>'/&lt;path&gt;/&lt;requested&gt;/&lt;endpoint-protocol&gt;creds'</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">경로</dt>
+<dd>
+<p>비밀에 대한 접두사 경로입니다. 이는 귀하에게 고유한 모든 가치가 될 수 있습니다.</p>
+</dd>
+<dt class="hdlist1">요청 ID입니다</dt>
+<dd>
+<p>생성해야 하는 요청 ID입니다. 동기화 관계를 생성할 때 API POST 요청의 헤더 중 하나에 ID를 제공해야 합니다.</p>
+</dd>
+<dt class="hdlist1">엔드포인트 프로토콜</dt>
+<dd>
+<p>정의된 대로 다음 프로토콜 중 하나입니다 <a href="https://api.cloudsync.netapp.com/docs/#/Relationships-v2/post_relationships_v2" target="_blank" rel="noopener">"사후 관계 v2 문서에서"</a>S3, Azure 또는 GCP(각각 대문자여야 함).</p>
+</dd>
+<dt class="hdlist1">크레드</dt>
+<dd>
+<p>URL은 _creds_로 끝나야 합니다.</p>
+</dd>
+</dl>
+</div>
+<div class="sect2">
+<h3 id="예">예</h3>
+<div class="paragraph">
+<p>다음 예제에서는 비밀에 대한 URL을 보여 줍니다.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">소스 자격 증명의 전체 URL 및 경로 예</dt>
+<dd>
+<p><a href="http://example.vault.com:8200/my-path/all-secrets/hb312vdasr2/S3Creds" class="bare">http://example.vault.com:8200/my-path/all-secrets/hb312vdasr2/S3Creds</a> 으로 문의하십시오</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>예제에서 볼 수 있듯이 접두사 경로는 _/my-path/all-sids/_이고 요청 ID는 _hb312vdasr2_이며 소스 끝점은 S3입니다.</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">대상 자격 증명의 전체 URL 및 경로 예</dt>
+<dd>
+<p><a href="http://example.vault.com:8200/my-path/all-secrets/n32hcbnejk2/AZURECreds" class="bare">http://example.vault.com:8200/my-path/all-secrets/n32hcbnejk2/AZURECreds</a> 으로 문의하십시오</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>접두사 경로는 _/my-path/all-sats/_이고, 요청 ID는 _n32hcbnejk2_이며, 대상 끝점은 Azure입니다.</p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="데이터-브로커-그룹을-준비하는-중입니다">데이터 브로커 그룹을 준비하는 중입니다</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>그룹의 각 데이터 브로커에 대한 로컬 구성 파일을 수정하여 외부 볼트에서 자격 증명을 가져오도록 데이터 브로커 그룹을 준비합니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>그룹의 데이터 브로커에 SSH를 연결합니다.</p>
+</li>
+<li>
+<p>/opt/netapp/databroker/config에 있는 local.json 파일을 편집합니다.</p>
+</li>
+<li>
+<p>enable을 * true * 로 설정하고 다음과 같이 _external-통합.hashicorp_에서 config 매개 변수 필드를 설정합니다.</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">활성화됨</dt>
+<dd>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>유효한 값: TRUE/FALSE</p>
+</li>
+<li>
+<p>Type:Boolean 을 입력합니다</p>
+</li>
+<li>
+<p>기본값: false</p>
+</li>
+<li>
+<p>참: 데이터 브로커는 외부의 HashashCorp Vault에서 비밀을 얻습니다</p>
+</li>
+<li>
+<p>거짓: 데이터 브로커는 로컬 볼트에 자격 증명을 저장합니다</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">URL</dt>
+<dd>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>유형: string</p>
+</li>
+<li>
+<p>값: 외부 볼트의 URL</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">경로</dt>
+<dd>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>유형: string</p>
+</li>
+<li>
+<p>값: 자격 증명을 사용하여 비밀번호에 대한 접두사 경로입니다</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">거부 - 승인되지 않음</dt>
+<dd>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>데이터 브로커가 승인되지 않은 외부 볼트를 거부하도록 할지 여부를 결정합니다</p>
+</li>
+<li>
+<p>Type:Boolean 을 입력합니다</p>
+</li>
+<li>
+<p>기본값: false</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">인증 방법</dt>
+<dd>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>데이터 브로커가 외부 볼트에서 자격 증명에 액세스하기 위해 사용해야 하는 인증 방법입니다</p>
+</li>
+<li>
+<p>유형: string</p>
+</li>
+<li>
+<p>유효한 값: “AWS-IAM”/“ROLE-APP”/"GCP-IAM"</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">역할 이름</dt>
+<dd>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>유형: string</p>
+</li>
+<li>
+<p>역할 이름(AWS-IAM 또는 GCP-IAM을 사용하는 경우)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">정전동맥(&amp;R)</dt>
+<dd>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>유형: 문자열(APP-ROLE 사용 시)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">네임스페이스</dt>
+<dd>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>유형: string</p>
+</li>
+<li>
+<p>네임스페이스(필요한 경우 X-Vault-Namespace 헤더)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</li>
+<li>
+<p>그룹의 다른 데이터 브로커에 대해 이 단계를 반복합니다.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="aws-역할-인증의-예">AWS 역할 인증의 예</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+          “external-integrations”: {
+                  “hashicorp”: {
+                         “enabled”: true,
+                         “url”: “https://example.vault.com:8200”,
+                         “path”: ““my-path/all-secrets”,
+                         “reject-unauthorized”: false,
+                         “auth-method”: “aws-role”,
+                         “aws-role”: {
+                               “role-name”: “my-role”
+                         }
+                }
+       }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="gcp-iam-인증의-예">GCP-IAM 인증의 예</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+"external-integrations": {
+    "hashicorp": {
+      "enabled": true,
+      "url": http://ip-10-20-30-55.ec2.internal:8200,
+      "path": "v1/secret",
+      "namespace": "",
+      "reject-unauthorized": true,
+      "auth-method": "gcp-iam",
+      "aws-iam": {
+        "role-name": ""
+      },
+      "app-role": {
+        "root_id": "",
+        "secret_id": ""
+      },
+"gcp-iam": {
+          "role-name": "my-iam-role"
+      }
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="gcp-iam-인증-사용-시-권한-설정">GCP-IAM 인증 사용 시 권한 설정</h3>
+<div class="paragraph">
+<p>_GCP-IAM_인증 방법을 사용하는 경우 데이터 브로커에 다음과 같은 GCP 권한이 있어야 합니다.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">- iam.serviceAccounts.signJwt</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="task-installing-gcp.html#permissions-required-for-the-service-account">"데이터 브로커의 GCP 권한 요구 사항에 대해 자세히 알아보십시오"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="볼트의-비밀을-사용하여-새-동기화-관계를-작성합니다">볼트의 비밀을 사용하여 새 동기화 관계를 작성합니다</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>이제 모든 것이 설정되었으므로 API 호출을 전송하여 볼트를 사용하는 동기화 관계를 만들어 비밀을 가져올 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>BlueXP 복사 및 동기화 REST API를 사용하여 관계를 게시합니다.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Headers:
+Authorization: Bearer &lt;user-token&gt;
+Content-Type: application/json
+x-account-id: &lt;accountid&gt;
+x-netapp-external-request-id-src: request ID as part of path for source credentials
+x-netapp-external-request-id-trg: request ID as part of path for target credentials
+Body: post relationship v2 body</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>사용자 토큰 및 BlueXP 계정 ID를 얻으려면 <a href="api-sync.html">"설명서의 이 페이지를 참조하십시오"</a>.</p>
+</li>
+<li>
+<p>사후 관계를 위한 본문을 구축하려면 <a href="https://api.cloudsync.netapp.com/docs/#/Relationships-v2/post_relationships_v2" target="_blank" rel="noopener">"관계 - v2 API 호출을 참조하십시오"</a>.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="예-2">예</h3>
+<div class="paragraph">
+<p>POST 요청의 예:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">url: https://api.cloudsync.netapp.com/api/relationships-v2
+headers:
+"x-account-id": "CS-SasdW"
+"x-netapp-external-request-id-src": "hb312vdasr2"
+"Content-Type": "application/json"
+"Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik…"
+Body:
+{
+"dataBrokerId": "5e6e111d578dtyuu1555sa60",
+"source": {
+        "protocol": "s3",
+        "s3": {
+                "provider": "sgws",
+                "host": "1.1.1.1",
+                "port": "443",
+                "bucket": "my-source"
+     },
+"target": {
+        "protocol": "s3",
+        "s3": {
+                "bucket": "my-target-bucket"
+        }
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/ko-kr/bluexp-copy-sync/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/ko-kr/bluexp-copy-sync/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">이 페이지에서</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">이용 약관</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">개인 정보 보호 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">쿠키 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">쿠키 설정</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">이 페이지에 대한 피드백 보내기</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ko-kr/bluexp-copy-sync/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ko-kr/bluexp-copy-sync/js/prism.js'></script>
+      <script type="text/javascript" src='/ko-kr/bluexp-copy-sync/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ko-kr/bluexp-copy-sync/js/ie-tabbed-blocks.js'></script>
+    <script src='/ko-kr/bluexp-copy-sync/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
