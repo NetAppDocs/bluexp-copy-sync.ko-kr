@@ -18,6 +18,18 @@ BlueXP 복사 및 동기화의 새로운 기능에 대해 알아보십시오.
 
 
 
+== 2024년 2월 11일
+
+
+
+=== regex를 기준으로 디렉토리를 필터링합니다
+
+이제 사용자는 regex를 사용하여 디렉토리를 필터링할 수 있습니다.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["디렉터리 제외 * 기능에 대해 자세히 알아보십시오."]
+
+
+
 == 2023년 11월 26일
 
 
