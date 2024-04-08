@@ -13,6 +13,7 @@ summary: BlueXP 복사 및 동기화 서비스를 시작하는 데 몇 가지 �
 :imagesdir: ./media/
 
 
+[role="lead"]
 BlueXP 복사 및 동기화 서비스를 시작하는 데 몇 가지 단계가 포함되어 있습니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 로그인하여 BlueXP를 설정합니다

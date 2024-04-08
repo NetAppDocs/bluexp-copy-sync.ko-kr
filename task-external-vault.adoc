@@ -13,6 +13,7 @@ summary: Amazon S3, Azure 또는 Google Cloud 자격 증명이 필요한 동기�
 :imagesdir: ./media/
 
 
+[role="lead"]
 Amazon S3, Azure 또는 Google Cloud 자격 증명이 필요한 동기화 관계를 생성하는 경우 BlueXP 복사본 및 동기화 사용자 인터페이스 또는 API를 통해 이러한 자격 증명을 지정해야 합니다. 또는 데이터 브로커 그룹을 설정하여 외부 HashiCorp 볼트에서 직접 자격 증명(또는 _비밀_)에 액세스할 수도 있습니다.
 
 이 기능은 Amazon S3, Azure 또는 Google Cloud 자격 증명이 필요한 동기화 관계가 있는 BlueXP 복사 및 동기화 API를 통해 지원됩니다.

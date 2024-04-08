@@ -1886,7 +1886,6 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">클라우드 공급자의 파일 서비스에 대한 지원을 받습니다</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">클라우드 공급자의 파일 서비스, 자체 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 BlueXP 설명서에서 "도움말 얻기"를 참조하십시오.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXP 및 해당 스토리지 솔루션 및 서비스에 관한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.</block>
-  <block id="78e61c832f461b7daf55a1dcd92749e0" category="list-text">Red Hat Enterprise Linux 8.0, 8.5 및 8.8</block>
   <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">2023년 11월 26일</block>
   <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Azure Blob을 위한 콜드 스토리지 클래스 지원</block>
   <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">이제 동기화 관계를 생성할 때 콜드 스토리지 Azure Blob 계층을 사용할 수 있습니다.</block>
@@ -1905,4 +1904,10 @@
   <block id="32d736bf69b032967c9ca2f284cd6218" category="inline-link">디렉터리 제외 * 기능에 대해 자세히 알아보십시오.</block>
   <block id="9afa1c757f9d9c1d7a951ff852629645" category="paragraph"><block ref="9afa1c757f9d9c1d7a951ff852629645" category="inline-link-rx"></block></block>
   <block id="65f2edc14f4a65d07600885b4ca1a56f" category="list-text">이름 또는 디렉토리 전체 경로를 입력하고 * Enter * 를 눌러 동기화에서 제외할 최대 15개의 regex 또는 디렉토리를 지정합니다. copy-offload, .snapshot, ~snapshot 디렉토리는 기본적으로 제외됩니다.</block>
+  <block id="8580342935824bb5edc626fa6371115e" category="section-title">2024년 4월 8일</block>
+  <block id="cd5e0880386a1f1f9deebd1fe0422847" category="section-title">RHEL 8.9 지원</block>
+  <block id="b2eb229bee01785cca939d890a06b37c" category="paragraph">이제 데이터 브로커는 Red Hat Enterprise Linux 8.9를 실행하는 호스트에서 지원됩니다.</block>
+  <block id="403a870c3777a3434883cf3338197e1e" category="inline-link">Linux 호스트 요구 사항 보기</block>
+  <block id="33437394afeba112bc78a89e1164345e" category="paragraph"><block ref="bddca2b75222059ea164cace70f493c0" category="inline-link-rx"></block>.</block>
+  <block id="62839d4e5d5a9de91b6f7d896439934b" category="list-text">Red Hat Enterprise Linux 8.5, 8.8 및 8.9</block>
 </blocks>
