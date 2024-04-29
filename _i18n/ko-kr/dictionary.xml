@@ -555,7 +555,6 @@
   <block id="f68b92ee815675ae3018eca060b553b7" category="summary">NetApp 직원의 도움을 받아 데이터 브로커 구성을 조정하고 성능을 개선하는 데 사용할 수 있는 정보를 얻을 수 있는 보고서를 만들고 볼 수 있습니다.</block>
   <block id="66a57cf55e06ad77b01c27e38766b83a" category="doc">구성을 조정하기 위해 보고서 작성 및 보기</block>
   <block id="428c9ca45dc8f0b8e1eda231aef5b08f" category="paragraph">NetApp 직원의 도움을 받아 데이터 브로커 구성을 조정하고 성능을 개선하는 데 사용할 수 있는 정보를 보고서를 생성하고 확인합니다.</block>
-  <block id="d065612e0b27393ca9ed8b8e18bc869f" category="paragraph">각 보고서는 동기화 관계의 경로에 대한 세부 정보를 제공합니다. 예를 들어, 파일 시스템에 대한 보고서는 디렉토리 및 파일 수, 파일 크기 분포, 디렉토리의 전체 및 깊이 등을 보여 줍니다.</block>
   <block id="0389649d1c6e65625a57cd6c84149999" category="section-title">보고서 작성</block>
   <block id="26126443d44ba2723fb7a7ede8dda75c" category="paragraph">각 동기화 관계의 경로(원본 또는 대상)가 테이블에 표시됩니다.</block>
   <block id="94954fba60bab7206fb4f66c4a7750cb" category="paragraph">다음은 파일 시스템 경로에 대한 샘플 보고서입니다.</block>
@@ -1278,7 +1277,6 @@
   <block id="c2c0cee3ff43b2b22931517d0aff1423" category="paragraph">이제 새 * 알림 * 설정을 동기화 관계에 사용할 수 있습니다. 이 설정을 사용하면 BlueXP 알림 센터에서 Cloud Sync 알림을 수신할지 여부를 선택할 수 있습니다. 성공적인 데이터 동기화, 실패한 데이터 동기화 및 취소된 데이터 동기화를 위한 알림을 활성화할 수 있습니다.</block>
   <block id="e0c9c98f02dabde677a2634ba4ffa251" category="paragraph">독립 실행형 Cloud Sync 서비스가 폐기되었습니다. 이제 BlueXP에서 동일한 모든 기능과 기능을 사용할 수 있는 Cloud Sync에 직접 액세스할 수 있습니다.</block>
   <block id="2120ca0a41cdfe67b77a3af2e3123d51" category="paragraph">BlueXP에 로그인한 후 맨 위에 있는 동기화 탭으로 전환하고 이전과 마찬가지로 관계를 볼 수 있습니다.</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
   <block id="e7972d5601badb4c5fcefad96c59c2fc" category="cell">https://console.bluexp.netapp.com/ \https://netapp-cloud-account.auth0.com 으로 문의하십시오</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">파트너 또는 리셀러 계정이 있는 경우 NSS 계정을 하나 이상 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">지원 등록 페이지에서 계정 ID 일련 번호를 찾습니다.</block>
@@ -1483,7 +1481,6 @@
   <block id="ba1c1b5e23e3b5a8fddd3f7c246ef506" category="list-text">BlueXP 복사 후 소스 위치에서 파일을 삭제하고 파일을 타겟 위치에 동기화하도록 선택합니다. 이 옵션에는 원본 파일이 복사된 후 삭제되므로 데이터가 손실될 위험이 포함됩니다.</block>
   <block id="d00f5267d50bd8fc291109206d3ad858" category="list-text">파일, 디렉토리, 심볼 링크 및 하드 링크 등 각 동기화에 포함할 파일 유형을 정의합니다.</block>
   <block id="e6bb715f6ce6607fa13566339effdb48" category="admonition">하드 링크는 보안되지 않은 NFS 대 NFS 관계에만 사용할 수 있습니다. 사용자는 하나의 스캐너 프로세스와 하나의 스캐너 동시 접속으로 제한되며 루트 디렉터리에서 스캔을 실행해야 합니다.</block>
-  <block id="c81b15466cc89faa99024d734f63d070" category="paragraph">BlueXP 복사 및 동기화는 소스와 대상 간의 데이터 동기화를 시작합니다.</block>
   <block id="4a8110d7baed5bb188d9ea48ab78e0e6" category="summary">NetApp은 BlueXP 복사 및 동기화 서비스를 사용하는 동안 제공한 자격 증명에 액세스할 수 없습니다. 자격 증명은 네트워크에 상주하는 데이터 브로커 컴퓨터에 직접 저장됩니다.</block>
   <block id="bad5b485fd3620e21ec885f8037708e8" category="paragraph">선택한 구성에 따라 새 관계를 생성할 때 BlueXP 복사 및 동기화에서 자격 증명을 묻는 메시지가 나타날 수 있습니다. 예를 들어, SMB 서버를 포함하는 관계를 설정하거나 AWS에서 데이터 브로커를 구축할 때</block>
   <block id="48fdd045e3712fe8b8bf348baef2a5e3" category="summary">새 데이터 브로커를 생성할 때 Google Cloud Data Broker 옵션을 선택하여 VPC의 새 가상 머신 인스턴스에 데이터 브로커 소프트웨어를 배포합니다. BlueXP 복사 및 동기화는 설치 과정을 안내합니다. 하지만 설치 준비에 도움이 되도록 이 페이지에서 요구 사항과 단계를 반복합니다.</block>
@@ -1910,4 +1907,13 @@
   <block id="403a870c3777a3434883cf3338197e1e" category="inline-link">Linux 호스트 요구 사항 보기</block>
   <block id="33437394afeba112bc78a89e1164345e" category="paragraph"><block ref="bddca2b75222059ea164cace70f493c0" category="inline-link-rx"></block>.</block>
   <block id="62839d4e5d5a9de91b6f7d896439934b" category="list-text">Red Hat Enterprise Linux 8.5, 8.8 및 8.9</block>
+  <block id="0d76b6f5f7ef4feb4ba34ba4dc8a3356" category="section-title">오브젝트 스토리지 메타데이터를 보존하는 동기화 관계는 어떤 유형입니까?</block>
+  <block id="b0f6c5b9e24f06b742cf40691ecda0a1" category="section-title">NFS 또는 SMB가 소스인 동기화 중에 복제되는 메타데이터는 무엇입니까?</block>
+  <block id="fca3645c4b9c57a087d67f345e46b21a" category="paragraph">사용자 ID, 수정 시간, 액세스 시간 및 GID와 같은 메타데이터는 기본적으로 복제됩니다. 사용자는 동기화 관계를 생성할 때 필요에 따라 ACL을 표시하여 CIFS에서 ACL을 복제할 수 있습니다.</block>
+  <block id="7051698c4825bdf5a52d58a440b9a6da" category="inline-link">관계 동기화</block>
+  <block id="5c4c20a350a01bcba51403b5971c1e55" category="inline-link">데이터 브로커 관리</block>
+  <block id="81671387dfc9496bbb584683131ed0ba" category="inline-link">성능 및 구성을 최적화하는 보고서를 생성합니다</block>
+  <block id="67eba5ff5953726e26983c2f64f794dc" category="paragraph">BlueXP 복사 및 동기화는 소스와 대상 간의 데이터 동기화를 시작합니다. 동기화 시간, 동기화 중단 여부 및 복사, 스캔 또는 삭제된 파일 수에 대한 동기화 통계를 사용할 수 있습니다. 그러면 를 관리할 수 있습니다<block ref="036850536ef01bc8377a10d87d2c60f6" category="inline-link-rx"></block>,<block ref="afaf0e8700f6eb5774590916b99650a2" category="inline-link-rx"></block>, 또는<block ref="04f03004f9e0603b9348762faa7e67f2" category="inline-link-rx"></block>.</block>
+  <block id="b9f1a0da291ab3c6b115c407d28d1ab9" category="inline-link">동기화 생성 및 완료</block>
+  <block id="62ef189d2125efd4e054bda2fe60e56f" category="paragraph">각 보고서는 동기화 관계의 경로에 대한 세부 정보를 제공합니다. 여기에는 디렉토리, 파일 및 심볼 링크 수, 파일 크기 분포, 디렉토리의 깊이와 폭, 수정 시간 및 액세스 시간이 포함됩니다. 이는 동기화 스테이틱과는 다르며 이후 대시보드에서 사용할 수 있습니다<block ref="633d339dd1720ad54a63284823a9045d" category="inline-link-rx"></block>.</block>
 </blocks>

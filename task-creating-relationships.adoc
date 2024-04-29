@@ -245,7 +245,7 @@ TIP: StorageGRID 및 IBM 클라우드 오브젝트 스토리지로 데이터를 
 
 결과 *
 
-BlueXP 복사 및 동기화는 소스와 대상 간의 데이터 동기화를 시작합니다.
+BlueXP 복사 및 동기화는 소스와 대상 간의 데이터 동기화를 시작합니다. 동기화 시간, 동기화 중단 여부 및 복사, 스캔 또는 삭제된 파일 수에 대한 동기화 통계를 사용할 수 있습니다. 그러면 를 관리할 수 있습니다 https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html["관계 동기화"], https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html["데이터 브로커 관리"], 또는 https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-reports.html#creating-reports["성능 및 구성을 최적화하는 보고서를 생성합니다"].
 
 
 

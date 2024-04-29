@@ -5,21 +5,18 @@ keywords: reports, sync reports, BlueXP copy and sync reports, report errors, pa
 summary: NetApp 직원의 도움을 받아 데이터 브로커 구성을 조정하고 성능을 개선하는 데 사용할 수 있는 정보를 얻을 수 있는 보고서를 만들고 볼 수 있습니다. 
 ---
 = 구성을 조정하기 위해 보고서 작성 및 보기
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
 NetApp 직원의 도움을 받아 데이터 브로커 구성을 조정하고 성능을 개선하는 데 사용할 수 있는 정보를 보고서를 생성하고 확인합니다.
 
-각 보고서는 동기화 관계의 경로에 대한 세부 정보를 제공합니다. 예를 들어, 파일 시스템에 대한 보고서는 디렉토리 및 파일 수, 파일 크기 분포, 디렉토리의 전체 및 깊이 등을 보여 줍니다.
+각 보고서는 동기화 관계의 경로에 대한 세부 정보를 제공합니다. 여기에는 디렉토리, 파일 및 심볼 링크 수, 파일 크기 분포, 디렉토리의 깊이와 폭, 수정 시간 및 액세스 시간이 포함됩니다. 이는 동기화 스테이틱과는 다르며 이후 대시보드에서 사용할 수 있습니다 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["동기화 생성 및 완료"].
 
 
 

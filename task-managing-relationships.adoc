@@ -5,15 +5,12 @@ keywords: sync, immediate, now, schedule, minutes, hours, on, off, delete, group
 summary: 데이터를 즉시 동기화하고 일정을 변경하는 등 동기화 관계를 언제든지 관리할 수 있습니다. 
 ---
 = 동기화 관계 관리
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

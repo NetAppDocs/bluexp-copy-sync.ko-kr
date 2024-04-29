@@ -5,15 +5,12 @@ keywords: manage data brokers, manage data broker groups, data broker performanc
 summary: 데이터 브로커는 소스 위치에서 타겟 위치로 데이터를 동기화합니다. 생성하는 각 동기화 관계에는 데이터 브로커가 필요합니다. 그룹에 새 데이터 브로커를 추가하고, 데이터 브로커에 대한 정보를 확인하는 등 데이터 브로커를 관리할 수 있습니다. 
 ---
 = 데이터 브로커 그룹을 관리합니다
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
