@@ -1916,4 +1916,8 @@
   <block id="67eba5ff5953726e26983c2f64f794dc" category="paragraph">BlueXP 복사 및 동기화는 소스와 대상 간의 데이터 동기화를 시작합니다. 동기화 시간, 동기화 중단 여부 및 복사, 스캔 또는 삭제된 파일 수에 대한 동기화 통계를 사용할 수 있습니다. 그러면 를 관리할 수 있습니다<block ref="036850536ef01bc8377a10d87d2c60f6" category="inline-link-rx"></block>,<block ref="afaf0e8700f6eb5774590916b99650a2" category="inline-link-rx"></block>, 또는<block ref="04f03004f9e0603b9348762faa7e67f2" category="inline-link-rx"></block>.</block>
   <block id="b9f1a0da291ab3c6b115c407d28d1ab9" category="inline-link">동기화 생성 및 완료</block>
   <block id="62ef189d2125efd4e054bda2fe60e56f" category="paragraph">각 보고서는 동기화 관계의 경로에 대한 세부 정보를 제공합니다. 여기에는 디렉토리, 파일 및 심볼 링크 수, 파일 크기 분포, 디렉토리의 깊이와 폭, 수정 시간 및 액세스 시간이 포함됩니다. 이는 동기화 스테이틱과는 다르며 이후 대시보드에서 사용할 수 있습니다<block ref="633d339dd1720ad54a63284823a9045d" category="inline-link-rx"></block>.</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
+  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP 블로그</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
 </blocks>
