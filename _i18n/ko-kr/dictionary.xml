@@ -14,7 +14,6 @@
   <block id="efdd49f1066bc795a31111d98cfa5ddf" category="doc">데이터 브로커 그룹을 관리합니다</block>
   <block id="e1191d25bbec84b8a1ba37471b41611f" category="paragraph">데이터 브로커 그룹은 소스 위치의 데이터를 타겟 위치로 동기화합니다. 생성하는 각 동기화 관계에 대해 그룹에 하나 이상의 데이터 브로커가 필요합니다. 그룹에 새 데이터 브로커를 추가하거나, 그룹에 대한 정보를 보는 등 데이터 브로커 그룹을 관리할 수 있습니다.</block>
   <block id="31361c8d27e70295df2bfa32fdeeb659" category="inline-link-macro">여러 데이터 브로커가 필요한 시기를 결정하는 방법에 대해 자세히 알아보십시오</block>
-  <block id="0a134fa70f4699a5c8408ed138b7162b" category="paragraph">대부분의 경우 단일 데이터 브로커가 동기화 관계에 대한 성능 요구사항을 충족할 수 있습니다. 그렇지 않으면 그룹에 추가 데이터 브로커를 추가하여 동기화 성능을 가속화할 수 있습니다. 하지만 먼저 동기화 성능에 영향을 줄 수 있는 다른 요소를 확인해야 합니다. <block ref="871c8177954bc9fc0961cd3c58102f39" category="inline-link-macro-rx"></block>.</block>
   <block id="0a7fa5ebd880718dbd4c644fda59fb38" category="section-title">그룹은 여러 관계를 관리할 수 있습니다</block>
   <block id="5724e69362e6baa1a8fac790e6db1ee9" category="paragraph">데이터 브로커 그룹은 한 번에 하나 이상의 동기화 관계를 관리할 수 있습니다.</block>
   <block id="84a191eeaa6e9761d09576e3ce8e7757" category="paragraph">예를 들어, 다음과 같은 세 가지 관계가 있다고 가정해 보겠습니다.</block>
@@ -1699,7 +1698,6 @@
   <block id="59e767a49496d7be5777e4cf48d4105c" category="list-text">관계를 만들 때 또는 관계를 만든 후에 설정을 활성화하여 SMB 서버에서 ACL만, 파일 전용 또는 ACL 및 파일을 복사합니다.</block>
   <block id="e0c7c4832f74beb01a9b0b7f4ceb62b9" category="list-text">Node.js 호환성</block>
   <block id="e0536b4ae9bb49a9633b77ce78d68e0a" category="section-title">동기화 성능을 가속화합니다</block>
-  <block id="baf8ddab0e1f4d03b84d74129178e3e2" category="section-title">업데이트 가능성</block>
   <block id="11d4a32f12cfcb43ae53ae70017809c1" category="section-title">알림을 설정합니다</block>
   <block id="b74bf8e34d66bdbffc7544ea6e132661" category="section-title">동기화 관계에 대한 설정을 변경합니다</block>
   <block id="76db6b34fbbc30a6bf267e7b8d4ded4b" category="section-title">관계 삭제</block>
@@ -1922,4 +1920,22 @@
   <block id="6849ea484f5664c887acc6f1ff990dfd" category="section-title">2024년 6월 2일</block>
   <block id="cfa477f3b89d95c12ff30d6390b89dd9" category="paragraph">BlueXP 복사 및 동기화 서비스가 몇 가지 버그를 수정하도록 업데이트되었습니다. 보안 업데이트를 적용하기 위해 데이터 브로커도 업데이트되었습니다. 새 데이터 브로커 버전은 1.0.52입니다.</block>
   <block id="8c5259dd9c9515862d9ef62edaaa899d" category="list-text">온프레미스 ONTAP 클러스터(NFS 또는 SMB)</block>
+  <block id="bd847a13f3c228a3e7b266af4584fd3a" category="paragraph">대부분의 경우 단일 데이터 브로커가 동기화 관계에 대한 성능 요구사항을 충족할 수 있습니다. 그렇지 않으면 그룹에 추가 데이터 브로커를 추가하여 동기화 성능을 가속화할 수 있습니다. 하지만 먼저 동기화 성능에 영향을 줄 수 있는 다른 요소를 확인해야 합니다. <block ref="871c8177954bc9fc0961cd3c58102f39" category="inline-link-macro-rx"></block>..</block>
+  <block id="cfe8bc2d032af638edef6aa48eddc97d" category="summary">오브젝트 스토리지에서 오브젝트 스토리지(예: Amazon S3-Azure Blob)로 데이터를 동기화하려는 경우 동기화 관계를 생성하기 전에 데이터 브로커 그룹을 준비해야 합니다.</block>
+  <block id="654ac38b7369238d760ed41821bfe8f6" category="doc">오브젝트 스토리지 간에 데이터를 동기화할 데이터 브로커를 준비합니다</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">이 작업에 대해</block>
+  <block id="8b29cf1534de96e7d8703b38dbc8b848" category="paragraph">데이터 브로커 그룹을 준비하려면 스캐너 구성을 수정해야 합니다. 구성을 수정하지 않으면 이 동기화 관계에 대한 성능 문제가 발생할 수 있습니다.</block>
+  <block id="f497dbcbf16cefa2ef6d812f89825438" category="paragraph">오브젝트 스토리지에서 오브젝트 스토리지로 데이터를 동기화하는 데 사용하는 데이터 브로커 그룹은 이러한 유형의 동기화 관계만 관리해야 합니다. 데이터 브로커 그룹이 다른 유형의 동기화 관계(예: NFS에서 NFS로 또는 SMB에 대한 오브젝트 스토리지)를 관리하는 경우 이러한 동기화 관계의 성능이 저하될 수 있습니다.</block>
+  <block id="ab1484a815310bbc60b24a9aae62d58f" category="list-text">BlueXP 복사 및 동기화에서 * Manage Data Broker * 를 선택합니다.</block>
+  <block id="4c9240708988b2ebe5983da5eadc4613" category="inline-image-macro">설정 아이콘의 스크린샷</block>
+  <block id="c633ea4565616bf2769598e328f3a188" category="list-text">을 선택합니다 <block ref="1acf1c98ddec5f9f5f83183a48b45a01" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="afc8ea6a55a9970b854c3ce2b28ba9b5" category="list-text">스캐너 구성을 업데이트합니다.</block>
+  <block id="65cb0c9fd06e63d9940a79bb99abc58e" category="list-text">스캐너 동시성 * 을 * 1 * 로 변경합니다.</block>
+  <block id="996c7ea13fea79c025562f291dbdb16b" category="list-text">스캐너 프로세스 제한 * 을 * 1 * 로 변경합니다.</block>
+  <block id="456191f26693536a8d701897a3127c23" category="list-text">Unify Configuration * 을 선택합니다.</block>
+  <block id="a700bfe82fb8fb28d4bca63bc5ae7922" category="paragraph">BlueXP 복사 및 동기화는 데이터 브로커 그룹 구성을 업데이트합니다.</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">다음 단계</block>
+  <block id="c28d873efe941bde2e3f61ce0bfc122b" category="paragraph">이제 방금 구성한 데이터 브로커 그룹을 사용하여 오브젝트 스토리지 간 동기화 관계를 생성할 수 있습니다.</block>
+  <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">2024년 7월 14일</block>
+  <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">BlueXP 복사본 및 동기화 서비스와 데이터 브로커를 업데이트하여 몇 가지 버그를 수정했습니다. 새 데이터 브로커 버전은 1.0.53입니다.</block>
 </blocks>

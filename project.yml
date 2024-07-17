@@ -46,6 +46,8 @@ sidebar:
     entries:
     - title: 소스와 타겟 간에 데이터를 동기화합니다
       entries:
+      - title: 오브젝트 스토리지 간에 데이터를 동기화할 데이터 브로커를 준비합니다
+        url: "/task-prepare-object-storage.html"
       - title: 동기화 관계를 생성합니다
         url: "/task-creating-relationships.html"
       - title: SMB 공유에서 ACL 복사
