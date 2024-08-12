@@ -4,7 +4,7 @@ permalink: task-external-vault.html
 keywords: hashicorp, vault, credentials, secrets, API 
 summary: Amazon S3, Azure 또는 Google Cloud 자격 증명이 필요한 동기화 관계를 생성하는 경우 BlueXP 복사본 및 동기화 사용자 인터페이스 또는 API를 통해 이러한 자격 증명을 지정해야 합니다. 또는 데이터 브로커를 설정하여 외부 HashashCorp 볼트에서 직접 자격 증명에 액세스하는 방법도 있습니다. 
 ---
-= 외부 HashCorp Vault를 사용하도록 데이터 브로커 그룹을 설정합니다
+= 외부 HashiCorp Vault를 사용하도록 데이터 브로커 그룹을 설정합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -32,7 +32,7 @@ URL을 설정하여 데이터 브로커 그룹에 자격 증명을 제공할 볼
 
 
 
-== 볼트 준비 중
+== 볼트를 준비합니다
 
 BlueXP 복사본을 제공하고 URL과 볼트 내 비밀에 동기화해야 합니다. 이러한 URL을 설정하여 볼트를 준비합니다. 만들려는 동기화 관계의 각 소스 및 타겟의 자격 증명에 대한 URL을 설정해야 합니다.
 
@@ -68,7 +68,7 @@ URL은 다음과 같이 설정해야 합니다.
 
 
 
-== 데이터 브로커 그룹을 준비하는 중입니다
+== 데이터 브로커 그룹을 준비합니다
 
 그룹의 각 데이터 브로커에 대한 로컬 구성 파일을 수정하여 외부 볼트에서 자격 증명을 가져오도록 데이터 브로커 그룹을 준비합니다.
 
@@ -202,7 +202,7 @@ URL::
 ----
 
 
-=== GCP-IAM 인증 사용 시 권한 설정
+=== GCP-IAM 인증을 사용할 때 권한을 설정합니다
 
 _GCP-IAM_인증 방법을 사용하는 경우 데이터 브로커에 다음과 같은 GCP 권한이 있어야 합니다.
 

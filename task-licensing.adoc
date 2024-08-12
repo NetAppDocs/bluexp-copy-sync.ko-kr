@@ -4,7 +4,7 @@ permalink: task-licensing.html
 keywords: license, subscription, registering, subscribing, subscribing in aws, subscribing in azure, subscribing to aws, subscribing to azure, aws marketplace, azure marketplace, netapp license, byol license, purchase a license, license settings, pay for relationships, paygo, annual, pay-as-you-go 
 summary: 14일 무료 평가판이 종료된 후 동기화 관계에 대한 비용을 지불할 수 있는 두 가지 방법이 있습니다. 첫 번째 옵션은 사용한 만큼만 지불하는 것입니다. 두 번째 옵션은 NetApp에서 직접 라이센스를 구매하는 것입니다. 
 ---
-= 무료 평가판이 종료된 후 동기화 관계에 대한 비용을 지불합니다
+= 무료 평가판이 끝난 후 동기화 관계에 대한 비용을 지불합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -28,7 +28,7 @@ link:concept-licensing.html["라이센스 작동 방식에 대해 자세히 알�
 
 
 
-== [[AWS]]AWS 가입
+== [[AWS]] AWS에서 구독
 
 AWS를 사용하면 사용한 만큼만 지불하거나 연간 단위로 비용을 지불할 수 있습니다.
 
@@ -52,7 +52,7 @@ video::video_cloud_sync_registering.mp4[width=848,height=480]
 
 
 
-== [[Azure]] Azure에서 가입
+== [[Azure]] Azure에서 구독
 
 Azure를 사용하면 사용한 만큼만 지불하거나 연간 단위로 비용을 지불할 수 있습니다.
 
@@ -78,7 +78,7 @@ video::video_cloud_sync_registering_azure.mp4[width=848,height=480]
 
 
 
-== [[licenses]]NetApp에서 라이센스를 구입하고 BlueXP 복사 및 동기화에 라이센스를 추가합니다
+== [[licenses]] NetApp에서 라이센스를 구입하고 BlueXP  복사본 및 동기화에 추가합니다
 
 동기화 관계를 사전에 결제하려면 하나 이상의 라이센스를 구입하여 BlueXP 복사 및 동기화 서비스에 추가해야 합니다.
 
@@ -104,7 +104,7 @@ video::video_cloud_sync_registering_azure.mp4[width=848,height=480]
 
 
 
-== 라이센스를 업데이트하는 중입니다
+== 라이센스를 업데이트합니다
 
 NetApp에서 구매한 BlueXP 사본 및 동기화 라이센스를 연장한 경우, BlueXP 사본 및 동기화에서 새 만료일이 자동으로 업데이트되지 않습니다. 만료 날짜를 새로 고치려면 라이센스를 다시 추가해야 합니다. 라이센스는 BlueXP 복사 및 동기화 또는 해당 웹 사이트를 통해 관리해야 하며 * 디지털 지갑을 통해 관리할 수 없습니다.
 

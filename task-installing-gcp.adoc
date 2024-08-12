@@ -4,7 +4,7 @@ permalink: task-installing-gcp.html
 keywords: data broker, install, gcp, google, networking, permissions, regions, install data broker in gcp, install in gcp, deploy in gcp, deploy data broker in gcp, install data broker in google, install in google, deploy in google, deploy data broker in google, networking requirements, port, ports, 443, port 443, ntp, network time protocol, gcp data broker, service account 
 summary: 새 데이터 브로커를 생성할 때 Google Cloud Data Broker 옵션을 선택하여 VPC의 새 가상 머신 인스턴스에 데이터 브로커 소프트웨어를 배포합니다. BlueXP 복사 및 동기화는 설치 과정을 안내합니다. 하지만 설치 준비에 도움이 되도록 이 페이지에서 요구 사항과 단계를 반복합니다. 
 ---
-= Google Cloud에서 새로운 데이터 브로커 생성
+= Google Cloud에서 새로운 데이터 브로커를 생성합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -101,7 +101,7 @@ BlueXP 복사 및 동기화가 Google Cloud에 데이터 브로커를 배포할 
 
 
 
-== 데이터 브로커 생성
+== 데이터 브로커를 생성합니다
 
 새로운 데이터 브로커를 생성하는 방법은 몇 가지가 있습니다. 다음 단계에서는 동기화 관계를 생성할 때 Google Cloud에 데이터 브로커를 설치하는 방법을 설명합니다.
 
@@ -143,7 +143,7 @@ Google Cloud에 데이터 브로커를 구축하고 새로운 동기화 관계�
 
 
 
-== 다른 Google Cloud 프로젝트에 버킷을 사용할 수 있는 권한 제공
+== 다른 Google Cloud 프로젝트에서 버킷을 사용할 수 있는 권한을 제공합니다
 
 동기화 관계를 생성하고 Google Cloud Storage를 소스 또는 타겟으로 선택할 때 BlueXP 복사 및 동기화를 통해 데이터 브로커의 서비스 계정에 사용할 수 있는 사용 권한이 있는 버킷 중에서 선택할 수 있습니다. 기본적으로 여기에는 데이터 브로커 서비스 계정과 _Same_PROJECT 에 있는 버킷이 포함됩니다. 그러나 필요한 권한을 제공하는 경우 _other_projects 에서 버킷을 선택할 수 있습니다.
 

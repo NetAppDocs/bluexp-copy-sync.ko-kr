@@ -4,7 +4,7 @@ permalink: task-managing-reports.html
 keywords: reports, sync reports, BlueXP copy and sync reports, report errors, path reports 
 summary: NetApp 직원의 도움을 받아 데이터 브로커 구성을 조정하고 성능을 개선하는 데 사용할 수 있는 정보를 얻을 수 있는 보고서를 만들고 볼 수 있습니다. 
 ---
-= 구성을 조정하기 위해 보고서 작성 및 보기
+= 보고서를 작성하고 확인하여 구성을 조정합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -47,7 +47,7 @@ image:screenshot_sync_report_object.gif["경로 항목 수, 객체 크기, 수�
 
 
 
-== 보고서를 다운로드하는 중입니다
+== 보고서 다운로드
 
 보고서를 오프라인으로 보거나 공유할 수 있도록 PDF로 보고서를 다운로드할 수 있습니다.
 
@@ -62,7 +62,7 @@ image:screenshot-sync-download-report.png["보고서에서 작업 메뉴를 선�
 
 
 
-== 보고서 오류를 보는 중입니다
+== 보고서 오류를 봅니다
 
 경로 테이블은 가장 최근 보고서에 오류가 있는지 여부를 식별합니다. 오류를 통해 경로를 스캔할 때 BlueXP 복사 및 동기화가 발생하는 문제를 확인할 수 있습니다.
 
@@ -85,7 +85,7 @@ image:screenshot_sync_report_errors.gif["오류 열의 오류 수와 클릭 가�
 
 
 
-== 보고서를 삭제하는 중입니다
+== 보고서를 삭제합니다
 
 수정한 오류가 포함되어 있거나 보고서가 제거된 동기화 관계에 연결되어 있는 경우 해당 보고서를 삭제할 수 있습니다.
 

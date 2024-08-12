@@ -561,7 +561,7 @@ Azure Blob이 타겟인 동기화 관계를 만들면 Cloud Sync에서 이제 Az
 
 이제 동기화 관계에 새로운 * 동기화 시간 초과 * 설정을 사용할 수 있습니다. 이 설정을 사용하면 지정된 시간 또는 일 수 동안 동기화가 완료되지 않은 경우 Cloud Sync에서 데이터 동기화를 취소할지 여부를 정의할 수 있습니다.
 
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#change-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"]..
 
 
 
@@ -571,7 +571,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-copy-sync/main/media/screenshot-notification-center.png["BlueXP의 알림 센터를 보여 주는 스크린샷."]
 
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#change-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"]..
 
 
 
@@ -736,7 +736,7 @@ link:task-copying-acls.html["SMB 공유에서 ACL을 복사하는 방법에 대�
 
 NetApp에서 구매한 Cloud Sync 라이센스를 연장한 경우 라이센스를 다시 추가하여 만료일을 업데이트할 수 있습니다.
 
-link:task-licensing.html#update-a-license["라이센스를 업데이트하는 방법을 알아보십시오"].
+link:task-licensing.html["라이센스를 업데이트하는 방법을 알아보십시오"]..
 
 
 
@@ -924,7 +924,7 @@ link:task-managing-reports.html["구성을 조정할 보고서를 만들고 보�
 
 이 고급 설정을 사용하면 Cloud Sync에서 파일 또는 디렉터리가 변경되었으며 다시 동기화되어야 하는지 여부를 결정할 때 특정 특성을 비교할지 여부를 선택할 수 있습니다.
 
-link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"].
+link:task-managing-relationships.html#change-the-settings-for-a-sync-relationship["동기화 관계의 설정 변경에 대해 자세히 알아보십시오"]..
 
 
 
