@@ -1940,4 +1940,6 @@
   <block id="cf2c9be412cc589b7ecf399ad3d2b5c5" category="paragraph"><block ref="ae034bb53c84075bda58d513fc152e63" category="inline-link-macro-rx"></block>..</block>
   <block id="a5cfb1c769f5b79bb515811f8e2d3256" category="section-title">2024년 8월 11일</block>
   <block id="91c579c47837abf6f4d04e29b24b1d72" category="paragraph">BlueXP 복사본 및 동기화 서비스와 데이터 브로커를 업데이트하여 몇 가지 버그를 수정했습니다. 새 데이터 브로커 버전은 1.0.54입니다.</block>
+  <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">2024년 9월 16일</block>
+  <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">BlueXP 복사본 및 동기화 서비스와 데이터 브로커를 업데이트하여 몇 가지 버그를 수정했습니다. 새 데이터 브로커 버전은 1.0.55입니다.</block>
 </blocks>
