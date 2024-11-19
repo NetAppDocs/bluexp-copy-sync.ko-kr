@@ -879,8 +879,6 @@
   <block id="b4951d06315b1f9ffb6d04ceb4346101" category="list-text">RAM *: 16GB</block>
   <block id="53a3e84f8dd7775216fa9eaac8d2ba6d" category="list-text">* CPU *: 4코어</block>
   <block id="1187c6e89712492c48d5d9a1e68f3b42" category="list-text">* 여유 디스크 공간 *: 10GB</block>
-  <block id="1a3d8802d280d4ec910f54042cd62998" category="inline-link">SELinux</block>
-  <block id="6388693da9b6d4d4012711303b71d780" category="list-text">* SELinux *: 을 사용하지 않는 것이 좋습니다<block ref="59f91e142e660e7d393df4005d7488a3" category="inline-link-rx"></block> 호스트.</block>
   <block id="3d64791fb8102a78b642b754f758f4b9" category="paragraph">SELinux는 데이터 브로커 소프트웨어 업데이트를 차단하는 정책을 적용하고 데이터 브로커가 정상 작동에 필요한 엔드포인트에 접속하는 것을 차단할 수 있습니다.</block>
   <block id="a43f5cf69d6af0c6e17bed7ff726625e" category="list-text">Linux 호스트에 소스와 타겟에 대한 접속이 있어야 합니다.</block>
   <block id="e7b55bccb60334ca631527b050553022" category="list-text">파일 서버는 Linux 호스트가 내보내기에 액세스할 수 있도록 허용해야 합니다.</block>
@@ -1236,7 +1234,6 @@
   <block id="c2c0cee3ff43b2b22931517d0aff1423" category="paragraph">이제 새 * 알림 * 설정을 동기화 관계에 사용할 수 있습니다. 이 설정을 사용하면 BlueXP 알림 센터에서 Cloud Sync 알림을 수신할지 여부를 선택할 수 있습니다. 성공적인 데이터 동기화, 실패한 데이터 동기화 및 취소된 데이터 동기화를 위한 알림을 활성화할 수 있습니다.</block>
   <block id="e0c9c98f02dabde677a2634ba4ffa251" category="paragraph">독립 실행형 Cloud Sync 서비스가 폐기되었습니다. 이제 BlueXP에서 동일한 모든 기능과 기능을 사용할 수 있는 Cloud Sync에 직접 액세스할 수 있습니다.</block>
   <block id="2120ca0a41cdfe67b77a3af2e3123d51" category="paragraph">BlueXP에 로그인한 후 맨 위에 있는 동기화 탭으로 전환하고 이전과 마찬가지로 관계를 볼 수 있습니다.</block>
-  <block id="e7972d5601badb4c5fcefad96c59c2fc" category="cell">https://console.bluexp.netapp.com/ \https://netapp-cloud-account.auth0.com 으로 문의하십시오</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">파트너 또는 리셀러 계정이 있는 경우 NSS 계정을 하나 이상 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">지원 등록 페이지에서 계정 ID 일련 번호를 찾습니다.</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">위의 2단계에서 계정의 일련 번호를 복사하고 보안 검색을 완료한 다음 NetApp의 글로벌 데이터 개인 정보 보호 정책을 읽는지 확인합니다.</block>
@@ -1943,4 +1940,6 @@
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">NSS 자격 증명을 BlueXP  조직과 연결하는 것은 BlueXP  사용자 로그인과 연결된 NSS 계정과 다릅니다.</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">이러한 NSS 자격 증명은 특정 BlueXP  조직 ID와 연결됩니다. BlueXP  조직에 속한 사용자는 * 지원 &gt; NSS 관리 * 에서 이러한 자격 증명에 액세스할 수 있습니다.</block>
   <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="doc">버그 수정</block>
+  <block id="60b6724cc91011c88aedcdfe5a1554f0" category="cell">\https://api.BlueXP .NetApp.com\https://NetApp -cloud-account.auth0.com 을 참조하십시오</block>
+  <block id="6a16108e082698a01703a8570c1c83ab" category="list-text">* SELinux * : 호스트에서 SELinux를 비활성화하는 것이 좋습니다.</block>
 </blocks>
