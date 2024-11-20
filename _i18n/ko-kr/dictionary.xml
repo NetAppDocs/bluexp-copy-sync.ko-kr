@@ -1942,4 +1942,6 @@
   <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="doc">버그 수정</block>
   <block id="60b6724cc91011c88aedcdfe5a1554f0" category="cell">\https://api.BlueXP .NetApp.com\https://NetApp -cloud-account.auth0.com 을 참조하십시오</block>
   <block id="6a16108e082698a01703a8570c1c83ab" category="list-text">* SELinux * : 호스트에서 SELinux를 비활성화하는 것이 좋습니다.</block>
+  <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">BlueXP 복사본 및 동기화 서비스와 데이터 브로커를 업데이트하여 몇 가지 버그를 수정했습니다. 새 데이터 브로커 버전은 1.0.56입니다.</block>
+  <block id="b6eaf938209a57174cf0c8478fbb177d" category="section-title">2024년 10월 27일</block>
 </blocks>
