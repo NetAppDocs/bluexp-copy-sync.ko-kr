@@ -934,7 +934,6 @@
   <block id="f65ca7baf45cc92aec55770c0b36841f" category="paragraph"><block ref="7cfabb5964e9e36c902fe67d3082ea34" category="inline-link-macro-rx"></block>.</block>
   <block id="7f1e5fcf21192da891eea1c1f4f6e6f0" category="paragraph">AWS를 사용하면 사용한 만큼만 지불하거나 연간 단위로 비용을 지불할 수 있습니다.</block>
   <block id="f06e94914580a228484d54783ffeb2bb" category="list-title">선불 종량제 단계</block>
-  <block id="af3298973678fbb2b80974a8030f07ac" category="list-text">AWS * 를 선택합니다</block>
   <block id="03909f0465e674709c33e446a2657166" category="paragraph">다음 비디오는 프로세스를 보여 줍니다.</block>
   <block id="d95d2545b9702aaa44811f90fd798b70" category="list-title">연간 지불 절차</block>
   <block id="b857da0ad28712a25e73c0907a2b3740" category="inline-link">AWS 마켓플레이스 페이지로 이동합니다</block>
@@ -1721,14 +1720,12 @@
   <block id="f8149e5272474293b308b5387c6e0eab" category="list-text">메시지가 표시되면 Microsoft 계정에 로그인합니다. 메시지가 표시되지 않으면 * Azure에 로그인 * 을 선택합니다.</block>
   <block id="62aca030fc0ae0886728293f4df155b2" category="list-text">Continue * 를 선택하고 배포가 완료될 때까지 페이지를 열어 둡니다.</block>
   <block id="ad16396812bea804a1980d079b968f53" category="list-text">BlueXP 복사 및 동기화에서 데이터 브로커가 사용 가능해지면 * 계속 * 을 선택합니다.</block>
-  <block id="b9c67bb0bae9993217d3413e493a9d52" category="list-text">동기화 &gt; 라이선스 * 를 선택합니다.</block>
   <block id="a5fb6f9fbd972c02e5329e1ff986d9d5" category="list-text">Subscribe * 를 선택한 다음 * Continue * 를 선택합니다.</block>
   <block id="9afef6b2e6bfae3c1516f6a5615e147a" category="list-text">Continue to Subscribe * 를 선택합니다.</block>
   <block id="7d5dc2ab8bafad8f8a587f44b30dc6f0" category="list-text">계약 옵션을 선택한 다음 * 계약 작성 * 을 선택합니다.</block>
   <block id="8bf624ad0ff2e9fd580f8cf2ccbfb01b" category="list-text">Azure 포털에서 * Create * 를 선택하고 옵션을 선택한 다음 * Subscribe * 를 선택합니다.</block>
   <block id="50663aa7afb45a9a800941c0bc89dcf1" category="list-text">배포가 완료되면 알림 팝업에서 SaaS 리소스의 이름을 선택합니다.</block>
   <block id="610e8ce14d61f13ee15be5f296487890" category="list-text">BlueXP 복사 및 동기화로 돌아가려면 * 계정 구성 * 을 선택합니다.</block>
-  <block id="8a16f41efcb781e6645783df6cb0e97b" category="list-text">BlueXP에서 * 동기화 &gt; 라이선스 * 를 선택합니다.</block>
   <block id="0be0367eff89e989e3751d45bd6caf93" category="list-text">Add License * 를 선택하고 필요한 정보를 추가합니다.</block>
   <block id="46d344ee2c7e916b914b2b031a79a880" category="list-text">계정이 아직 추가되지 않은 경우 * NSS 자격 증명 추가 * 를 선택하고 사용자 이름 및 암호를 입력한 다음 * 등록 * 을 선택하고 드롭다운 목록에서 선택합니다.</block>
   <block id="6a44822bf57bcae55604cb610b227f67" category="paragraph">소스 파일 및 폴더가 대상 위치에서 동기화 및 유지 관리되는 방식을 정의하는 설정을 수정하려면 * 소스 개체 필터 * 를 선택합니다.</block>
@@ -1944,4 +1941,11 @@
   <block id="6a16108e082698a01703a8570c1c83ab" category="list-text">* SELinux * : 호스트에서 SELinux를 비활성화하는 것이 좋습니다.</block>
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">BlueXP 복사본 및 동기화 서비스와 데이터 브로커를 업데이트하여 몇 가지 버그를 수정했습니다. 새 데이터 브로커 버전은 1.0.56입니다.</block>
   <block id="b6eaf938209a57174cf0c8478fbb177d" category="section-title">2024년 10월 27일</block>
+  <block id="4fa4cb31b90bbe492aedd2e14cab7850" category="video-title">동기화 관계에 대한 파일 확장명을 제외합니다</block>
+  <block id="befcd22ee9f31ea0976355003e77715b" category="list-text">BlueXP  탐색 메뉴에서 * 이동성 &gt; 복사 및 동기화 * 를 선택합니다.</block>
+  <block id="f8b6a77f9bfe4363519793574823fcdf" category="video-title">AWS CloudFormation 템플릿에서 데이터 브로커를 시작합니다</block>
+  <block id="fdd0629e14af63efd824f165e5349337" category="list-text">라이센스 * 를 선택합니다.</block>
+  <block id="734a65eeb41483b7a636c9cf13e4aad7" category="list-text">AWS * 를 선택합니다.</block>
+  <block id="045842584f2fd61a80d6c55f49bd1f4f" category="video-title">BlueXP  복사본을 구독하고 AWS Marketplace에서 동기화합니다</block>
+  <block id="09cf0bd8febab038e59733b8d4ac6505" category="video-title">BlueXP  복사본을 구독하고 Azure 마켓플레이스에서 동기화합니다</block>
 </blocks>
