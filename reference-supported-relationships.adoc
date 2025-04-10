@@ -28,7 +28,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure Blob
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버
@@ -47,7 +46,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버
@@ -67,7 +65,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure NetApp Files
 * 상자 ^1^
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버
@@ -86,7 +83,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure Blob
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버
@@ -119,7 +115,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버
@@ -151,25 +146,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
-* Google 클라우드 스토리지
-* IBM 클라우드 오브젝트 스토리지
-* NFS 서버
-* 온프레미스 ONTAP 클러스터(NFS 또는 SMB)
-* SMB 서버
-* StorageGRID
-
-
-
-
-| Cloud Volumes Service  a| 
-* Amazon EFS
-* ONTAP용 Amazon FSx
-* Amazon S3
-* Azure Blob
-* Azure NetApp Files
-* Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버
@@ -187,7 +163,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure Blob
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버
@@ -215,7 +190,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure NetApp Files
 * 상자 ^1^
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버
@@ -234,7 +208,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * Google 드라이브
 * IBM 클라우드 오브젝트 스토리지
@@ -255,7 +228,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버
@@ -289,7 +261,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * Google 드라이브
 * IBM 클라우드 오브젝트 스토리지
@@ -311,7 +282,6 @@ BlueXP 복사 및 동기화를 통해 소스에서 타겟으로 데이터를 동
 * Azure NetApp Files
 * 상자 ^1^
 * Cloud Volumes ONTAP
-* Cloud Volumes Service
 * Google 클라우드 스토리지
 * IBM 클라우드 오브젝트 스토리지
 * NFS 서버

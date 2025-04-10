@@ -52,7 +52,6 @@ BlueXP 복사 및 동기화는 다음 스토리지 유형을 지원합니다.
 * Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * 상자(미리 보기로 사용 가능)
-* Cloud Volumes Service
 * Cloud Volumes ONTAP
 * Google 클라우드 스토리지
 * Google 드라이브
