@@ -621,7 +621,6 @@
   <block id="486538f3b2cf30dbac185ae48dbcd398" category="paragraph">데이터 브로커 그룹은 단일 파일이 전송되지 않을 때 시간 초과되지 않습니다. 대신 데이터 브로커 그룹은 파일을 건너뛰기 전에 3번 재시도합니다. 재시도 값은 동기화 관계에 대한 설정에서 구성할 수 있습니다.</block>
   <block id="16577fe9b5ad3fc74ec2a37327b4f98f" category="inline-link-macro">동기화 관계의 설정을 변경하는 방법에 대해 알아봅니다</block>
   <block id="e7fc2a48e6896c10c00e2e0d0f42df0a" category="section-title">매우 큰 데이터 세트가 있는 경우 어떻게 해야 합니까?</block>
-  <block id="1a76a33306f63cd222193be36e2aab28" category="paragraph">단일 디렉토리에 600,000개 이상의 파일이 있는 경우 페이로드를 처리하도록 데이터 브로커 그룹을 구성할 수 있도록 mailto:ng-cloudsync-support@netapp.com [contact us] 를 사용합니다. 데이터 브로커 그룹에 메모리를 추가해야 할 수도 있습니다.</block>
   <block id="5272c1335a923889fee61138f9c644e0" category="paragraph">마운트 지점의 총 파일 수에는 제한이 없습니다. 계층 구조(최상위 디렉토리 또는 하위 디렉토리)의 레벨에 관계없이 60만 개 이상의 파일이 있는 대규모 디렉토리에 대해서는 추가 메모리가 필요합니다.</block>
   <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">보안</block>
   <block id="961ac1bba4fae7c023a039958d1c8be6" category="paragraph">보안과 관련된 다음 질문입니다.</block>
@@ -1215,7 +1214,6 @@
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSS 계정을 가지고 있는 NetApp 고객은 BlueXP를 통해 지원을 받기 위해 등록하기만 하면 됩니다.</block>
   <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">위에 사용된 BlueXP 계정 일련 번호(960xxxx)를 일련 번호 필드에 복사해야 합니다. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp은 다양한 방법으로 BlueXP를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp은 다양한 방법으로 BlueXP 및 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">문제를 해결하는 데 도움이 되는 문서를 찾으려면 BlueXP 기술 자료를 검색하십시오.</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만드십시오.</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">현재 보고 있는 BlueXP 문서입니다.</block>
@@ -1597,8 +1595,6 @@
   <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">이 오류는 NSS 계정과 연결된 레코드 회사가 BlueXP 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">두 가지 유형의 일련 번호를 등록하면 지원 티켓 열기와 자동 케이스 생성 등의 기능을 사용할 수 있습니다. 아래 설명과 같이 BlueXP에 NetApp Support 사이트(NSS) 계정을 추가하여 등록을 완료합니다.</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">NSS 자격 증명 추가 * 를 선택하고 NetApp Support 사이트(NSS) 인증 프롬프트를 따릅니다.</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">계정 일련 번호와 녹색 확인란이 표시된 스크린샷 및 지원을 위해 등록된 텍스트.</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">기존 사용권 및 제품 번호가 _NO_NSS인 기존 NetApp 고객인 경우 NSS 계정을 만들어 BlueXP 로그인과 연결해야 합니다.</block>
   <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">의 단계를 완료하여 새 NSS 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetApp Support 사이트 계정이 있으면 의 단계를 완료하여 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
@@ -1947,4 +1943,9 @@
   <block id="3de4ee14f1b1d0abe0ecac5872f26c6c" category="admonition">Azure NetApp Files에서는 BlueXP  복사 및 동기화 관계를 무료로 사용할 수 있습니다.</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
   <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="94eaf7b43e9ee8089b5da00def9f9915" category="inline-link-macro">문의하기</block>
+  <block id="4ee5c5cf90078d7d2c3d49ab3f1a42ea" category="paragraph">단일 디렉토리에 600,000개 이상의 파일이 포함되어 있는 경우<block ref="372d4988d4217beca7099b3e4d06e5e1" category="inline-link-macro-rx"></block> 이를 통해 데이터 브로커 그룹이 페이로드를 처리하도록 구성하는 데 도움을 드릴 수 있습니다.  데이터 브로커 그룹에 추가 메모리를 추가해야 할 수도 있습니다.</block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp BlueXP 와 클라우드 서비스에 대한 다양한 지원을 제공합니다. 지식 베이스(KB) 문서 및 커뮤니티 포럼 등 다양한 무료 셀프 지원 옵션을 연중무휴 24시간 이용하실 수 있습니다. 지원 등록 시 웹 티켓팅을 통한 원격 기술 지원이 제공됩니다.</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">계정 일련번호, 녹색 확인란, 지원 등록이라는 텍스트가 표시된 스크린샷입니다.</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
